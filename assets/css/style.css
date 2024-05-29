@@ -44,6 +44,23 @@ h4 {
 
 /* Main content */
 /* Puzzle */
+.timer-moves-audio-info-container {
+display: flex;
+justify-content: space-between;
+}
+
+.timer-moves {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.audio-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #puzzle-container {}
 
 .puzzle1 {
