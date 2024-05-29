@@ -89,12 +89,12 @@ A bright and vibrant colour scheme is used to make the game visually stimulating
 - **Colour Palette**
 The colour palette fir this site was devised in keeping with the original SLIDLES logo and created in [Adobe Color](https://color.adobe.com/).
 
-<img src="docs/colour-palette.webp" width="500">
+<img src="docs/colour-palette.webp" alt="colour palette" width="500">
 
 - **Logo**
 The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
 
-<img src="docs/wireframes/slidles_logo.webp" width="500">
+<img src="docs/slidles_logo.webp" alt="logo" width="500">
 
 - ### Typography
 Clear, easy-to-read fonts complement the vibrant design without distracting from gameplay.
@@ -104,9 +104,9 @@ The font Montserrat was carefully chosen and imported from [Google Fonts](https:
 Neue-Helvetica was used in keeping with design inspiration.
 Monospace was employed so the timer and moves section were not moving around page whilst incrementing
 
-![Monteserrat](docs/fonts/montserrat.webp)
-![Helvetica Neue](docs/fonts/neue-helvetica.webp)
-![Monospace](docs/fonts/monospace.webp)
+<img src="docs/fonts/montserrat.webp" alt="montserrat font" width="400">
+<img src="docs/fonts/neue-helvetica.webp" alt="neue helvetica font" width="400">
+<img src="docs/fonts/neue-helvetica.webp" alt="monospace font" width="400">
 
 - ### Imagery
 
@@ -118,7 +118,7 @@ Wireframes serve as the blueprint for the website, outlining the layout and func
 
 Wireframes for this site were created with [Figma](https://figma.com/).
 
-- **Sketche Wireframes**
+- **Sketch Wireframes**
 
 <img src="docs/wireframes/wireframe-sketch-mobile.webp" width="500">
 
@@ -143,12 +143,12 @@ The structure of Slidles is designed for a seamless and intuitive user experienc
 ### Logo
 The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
 
-<img src="docs/wireframes/slidles_logo.webp" alt="logo" width="500">
+<img src="docs/slidles_logo.webp" alt="logo" width="500">
 
 ### Favicon
 Original creation designed in Adobe Illustrator this custom favicon stems from the designed logo which enhances recognition and improves user experience by providing a visual marker for the puzzle.
 
-<img src="docs/wireframes/slidles_icon.webp" alt="favicon" width="100">
+<img src="docs/slidles_icon.webp" alt="favicon" width="100">
 
 ### Header
 ### Timer
