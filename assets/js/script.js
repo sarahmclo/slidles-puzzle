@@ -19,11 +19,11 @@ function togglePlay() {
 /** Info modal */
 //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
 //Get info modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 //Get icon that opens modal
-var img = document.getElementById("info-modal");
+let img = document.getElementById("info-modal");
 //Get element that closes modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 //When user clicks on icon, open modal
 img.onclick = function () {
     modal.style.display = "block";
