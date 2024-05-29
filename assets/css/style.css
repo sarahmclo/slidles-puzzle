@@ -50,6 +50,7 @@ h4 {
 .timer-moves-audio-info-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* flex allows all to be on same line, add gap */
@@ -67,8 +68,14 @@ h4 {
 
 /* Audio tutorial, code adapted from https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e */
 #volume-icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#info-modal {
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
