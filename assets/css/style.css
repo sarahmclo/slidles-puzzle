@@ -65,6 +65,13 @@ h4 {
     gap: 10px;
 }
 
+#volume-icon {
+    width: 30px;
+    height: 30px;
+}
+/* Audio tutorial, code adapted from https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e */
+
+
 /* Puzzle */
 #puzzle-container {
     padding-top: 5px;
@@ -77,7 +84,7 @@ h4 {
 
 /* Buttons */
 #button-container {
-padding: 5px;
+    padding: 5px;
 }
 
 .playButton-container {
@@ -88,7 +95,9 @@ padding: 5px;
     margin-bottom: 10px;
 }
 
-.playButton, .hintButton, .switchButton {
+.playButton,
+.hintButton,
+.switchButton {
     background-color: #252525;
     border: 0.5px solid #ffffff;
     border-radius: 20px;
@@ -109,7 +118,9 @@ padding: 5px;
     text-align: center;
 }
 
-.playButton:hover, .hintButton:hover, .switchButton:hover {
+.playButton:hover,
+.hintButton:hover,
+.switchButton:hover {
     background-color: #F3A0BC;
     color: #ffffff;
     border: 0.5px solid #ffffff;
@@ -142,7 +153,7 @@ a,
 a:visited,
 a:hover,
 a:active {
-   color: inherit;
+    color: inherit;
 }
 
 /* Media queries */
