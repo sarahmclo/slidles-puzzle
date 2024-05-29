@@ -65,12 +65,12 @@ h4 {
     gap: 10px;
 }
 
+/* Audio tutorial, code adapted from https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e */
 #volume-icon {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
-/* Audio tutorial, code adapted from https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e */
-
 
 /* Puzzle */
 #puzzle-container {

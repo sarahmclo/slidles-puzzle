@@ -281,10 +281,28 @@ Manual testing for the site involves hands-on evaluation by human testers to ens
 Throughout the development process, we encountered and resolved various bugs to ensure a smooth and seamless user experience. Our rigorous testing procedures helped identify and address these issues promptly.
 
 - ### Mark-up Validation Testing Bugs ###
+|Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
+|-------------|-----------------------|---------|--------|:-----:|----------|
+| Timer-moves-audio-info-container: get all on one line| Main content index.html | Chrome | MacBook | Yes | Use flexbox to and gap to space correctly  |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
 
 - ### CSS Validation Testing Bugs ###
 
 - ### Javascript Validation Testing Bugs ###
+|Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
+|-------------|-----------------------|---------|--------|:-----:|----------|
+| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
+| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
+| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
+| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
+| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
+| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
 
 ## Finished Product <a name="finished-product"></a>
 
