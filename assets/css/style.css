@@ -19,23 +19,39 @@ body {
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    /* justify-content: center;
+    min-height: 100vh;
+    min-width: 100vh; */
 }
 
-/* Main content */
 main {
-
+    flex: 1;
 }
 
+/* Header */
 /* Logo */
 .logo {
-    padding: 20px;
-    max-width: 350px;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+    max-width: 380px;
 }
 
 /* Tagline */
 h4 {
-
+    padding-bottom: 20px;
 }
+
+/* Main content */
+/* Puzzle */
+#puzzle-container {}
+
+.puzzle1 {
+    border: #252525 solid 1px;
+}
+
+
+
 
 /* Footer */
 
