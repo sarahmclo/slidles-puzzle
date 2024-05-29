@@ -34,15 +34,19 @@
     <main>
         <!-- Timer, moves, audio and info section -->
         <div class="timer-moves-audio-info-container">
+            <!-- Timer and moves -->
             <div class="timer-moves">
                 <p>Timer:<span id="timer">0:00</span></p>
                 <p>Moves:<span id="moves">0</span></p>
             </div>
+            <!-- Audio and info -->
             <div class="audio-info">
-                <div class="audio-info">
+                <div class="audio">
                     <img id="volume-icon" onclick="togglePlay()" src="assets/images/vol-off.webp" alt="volume toggle">
                     <audio src="assets/audio/carl-orff-gassenhauer-hans-neusiedler-180891.mp3" loop></audio>
-                    <p>Info<span id="info"></span></p>
+                </div>
+                <!-- Info modal -->
+                <img id="info-modal" src="assets/images/info-icon.webp" alt="information modal trigger on how to play" aria-label="The letter i surrounded by a circle">
                 </div>
             </div>
         </div>
