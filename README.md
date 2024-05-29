@@ -29,7 +29,7 @@ Shields.io badges
     - [Header](#header)
     - [Main Content](#main-content)
     - [Footer](footer)
-    - 4. [Technologies Utilised](#technologies-utilised)
+    - [Technologies Utilised](#technologies-utilised)
     - [Languages](#languages)
     - [Frameworks and Programs](#frameworks-and-programs)
 5. [Deployment](#deployment)
