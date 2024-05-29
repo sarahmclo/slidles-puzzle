@@ -19,9 +19,9 @@ body {
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    /* justify-content: center;
     min-height: 100vh;
-    min-width: 100vh; */
+    /* justify-content: center;
+    min-width: 100vw; */
 }
 
 main {
@@ -34,13 +34,13 @@ main {
     width: 100%;
     height: auto;
     padding: 10px 20px 20px 20px;
-    max-width: 380px;
+    max-width: 390px;
     margin-top: 30px;
 }
 
 /* Tagline */
 .tagline {
-    padding: 0 20px 30px 20px;
+    padding: 0 20px 20px 20px;
 }
 
 
@@ -106,7 +106,8 @@ main {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 30% auto; /* from top and centered */
+    margin: 30% auto;
+    /* from top and centered */
     padding: 20px;
     border: 1px solid #252525;
     width: 80%;
@@ -120,13 +121,15 @@ main {
     cursor: pointer;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #3f3f42;
     text-decoration: none;
     cursor: pointer;
 }
 
-.how-to-play, h4 {
+.how-to-play,
+h4 {
     padding: 10px;
 }
 
@@ -161,7 +164,7 @@ ol li {
     margin-bottom: 10px;
 }
 
-.hintButton-switchButton-container {
+.hintButton-container {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -228,13 +231,94 @@ a:active {
     color: inherit;
 }
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+/* Media Query - Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .tagline {
+        font-size: 130%;
+        padding-bottom: 30px;
+    }
+
+    .logo {
+        max-width: 500px;
+    }
+
+    #puzzle-container {}
+
+    .puzzle1 {
+        width: 100%;
+    }
+
+    .hintButton-container {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .playButton,
+    .hintButton,
+    .switchButton {
+        font-size: 24px;
+        font-weight: 300;
+        width: 170px;
+        height: 50px;
+        text-align: center;
+        line-height: 26px;
+        border-radius: 24px;
+    }
+
+    #volume-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #info-modal {
+        width: 30px;
+        height: 30px;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    button,
+    input,
+    textarea {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    #social-networks {
+        font-size: 40px;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .created-by {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .modal {
+        width: 80%;
+        /* moves modal to right */
+        height: 100%;
+        right: 10%;
+        /* pulls modal back */
+    }
+}
+
+/* Media query: tablets and larger (1024px and up) */
+@media screen and (min-width: 1024px) {
 
     /* Info Modal */
-    .modal { 
-        width: 50%; /* moves modal to right */
-        height: auto;
-        right: 25%; /* pulls modal back */
+    .modal {
+        width: 80%;
+        /* moves modal to right */
+        height: 100%;
+        right: 10%;
+        /* pulls modal back */
+    }
+
+    .modal-content {
+        margin: 13% auto;
     }
 }
