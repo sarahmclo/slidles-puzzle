@@ -1,114 +1,236 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Slidles
 
-Welcome USER_NAME,
+Mockup
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Introduction
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 28, 2024**
+Shields.io badges
 
-## Gitpod Reminders
+## Table of Contents
+1. [User Experience (UX)](#user-experience)
+    - [Project Goals](#project-goals)
+    - [User stories](#user-stories)
+    - [Target Audience Goals](#target-audience-goals)
+    - [Site Owner Goals](#site-owner-goals)
+    - [First Time User Goals](#first-time-user-goals)
+    - [Return User Goals](#return-user-goals)
+2. [Design](#design)
+    - [Design Philosophy](#design-philosophy)
+    - [Design Choices](#design-choices)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+    - [Structure](#structure)
+    - [The 5 Elements](#the-5-elements)
+3. [Features](#features)
+    - [Logo](#logo)
+    - [Favicon](#favicon)
+    - [Header](#header)
+    - [Main Content](#main-content)
+    - [Footer](footer)
+    - 4. [Technologies Utilised](#technologies-utilised)
+    - [Languages](#languages)
+    - [Frameworks and Programs](#frameworks-and-programs)
+5. [Deployment](#deployment)
+    - [Remote Deployment](#remote-deployment)
+    - [Local Deployment](#local-deployment)
+6. [Testing](#testing)
+    - [Validation Testing](#validation-testing)
+    - [Manual Testing](#manual-testing)
+7. [Bugs and Fixes](#bugs-and-fixes)
+8. [Finished Product](#finished-product)
+9. [Future Features](#future-features)
+10. [Credits](#credits)
+    - [Content and Code](#content-and-code)
+    - [Frameworks](#frameworks)
+    - [Media](#media)
+11. [Conclusion](#conclusion)
+12. [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)<a name="user-experience"></a>
 
-`python3 -m http.server`
+## Project Goals
 
-A blue button should appear to click: _Make Public_,
+## User Stories
 
-Another blue button should appear to click: _Open Browser_.
+## Target Audience Goals
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Site Owner Goals
 
-A blue button should appear to click: _Make Public_,
+## First Time User Goals
 
-Another blue button should appear to click: _Open Browser_.
+## Return User Goals
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Design <a name="design"></a>
 
-To log into the Heroku toolbelt CLI:
+### Design Philosophy
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Design Choices
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+- **Reference Images**
 
-------
+- ### Colour Scheme
 
-## Release History
+- **Colour Palette**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- **Logo**
 
-**May 28 2024:** Fix Mongo and Links installs
+- ### Typography
 
-**April 26 2024:** Update node version to 16
+- **Fonts**
 
-**September 20 2023:** Update Python version to 3.9.17.
+- ### Imagery
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- **Content Hero Images**
+All images were optimised and converted to webp with [Convertio](https://convertio.co/).
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Wireframes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- **Mobile Wireframes**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- **Desktop Page Wireframes**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Structure
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### The 5 Elements
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Features
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Logo
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Favicon
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Header
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Main Content
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Footer
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Technologies Utilised <a name="technologies-utilised"></a>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Languages
 
-------
+- [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [**CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [**Javascript**](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 
-## FAQ about the uptime script
+### Frameworks and Programs
 
-**Why have you added this script?**
+- [**Gitpod**](https://www.gitpod.io/) Gitpod used for writing code, committing, and pushing to GitHub. 
+- [**GitHub**](https://github.com/) GitHub utilised for hosting, viewing and some readme amendments.
+- [**Google Fonts**](https://fonts.google.com/) Google Fonts used to import Inter and Roboto into stylesheet.
+- [**Font Awesome**](https://fontawesome.com/) Font Awesome used throughout to add icons in order to create a better visual experience for the user.
+- [**Figma**](https://figma.com/) Balsamiq utilised to create wireframes during the design phase.
+- [**Responsive Design Checker**](https://responsivedesignchecker.com/) Responsive Design Checker used in the testing process to check responsiveness on various devices.
+- [**Am I Responsive**](https://ui.dev/amiresponsive) Am I Responsive utilised to generate Mock Up Image of site in a responsive manner.
+- [**Chrome DevTools**](https://developer.chrome.com/docs/devtools) Chrome DevTools utilised frequently during development process for code review and responsiveness tests.
+- [**Browserstack**](https://www.browserstack.com/) Browserstack employed to test browser compatility across multiple devices.
+- [**Shields.io**](https://shields.io/) Shields.io used to generate dynamic badges for Readme.
+- [**Coolers Contrast Checker**](https://coolors.co/) Coolers Contrast Checker used to make sure colours contrasted well correctly for optimum accessibility.
+- [**Adobe Colors**](https://color.adobe.com/) Adobe Colors helped to generate a pleasing colour palette in keeping with logo and overall design.
+- [**Convertio**](https://convertio.co/) Convertio utilised to optimise images to webp for fast loading.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Deployment <a name="deployment"></a>
 
-**How will this affect me?**
+Git was used for version control. Version control was done locally and remotely. For remote version control, GitHub was used. Regular commits were made after each file change.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Remote Deployment
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+GitHub Pages was used to deploy the site remotely.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+1. Login to [Git Hub](https://github.com/) Repository account
+2. Navigate to my project repository slidles-puzzle
+3. Click the Settings near the top of the page
+4. In the left-hand menu, find and click on the Pages
+5. In the Source section, choose 'main' from the drop-down, select branch menu
+6. Select 'root' from the drop-down folder menu
+7. Click 'Save'
+8. Project now live and a link is visible at the top of the page "Your site is published at https://github.com/sarahmclo/slidles-puzzle/“ 
 
-**So….?**
+### Local Deployment
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+To contribute or check the code, you can:
+- Fork the repository
+- Clone the repository
 
-**Can I opt out?**
+### How to Fork
+1. To fork, go the repository
+2. Click on the Fork button in the top left corner of the page
+3. Fill in the form with either keep the name or create a new name for the repository
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### How to Clone
+1. To clone, go to repository
+2. Click on the Code button above the repository files
+3. A drop-down will appear and choose either
+4. Go to your terminal and decide where you want to clone the files
+5. Use the copy/paste button and copy it into your terminal
+6. You also have the option to download a ZIP file of the code
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing <a name="testing"></a>
 
-**Anything more?**
+### Validation Testing
+## HTML
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## CSS
 
----
+## Javascript
 
-Happy coding!
+## Accessibility
+
+### Lighthouse Testing
+
+### Semantic HTML
+
+Semantic HTML tags were used to provide a clear and meaningful structure to the website content. This helps screen readers and other assistive technologies interpret and convey information accurately.
+
+### ARIA (Accessible Rich Internet Applications)
+
+ARIA attributes were utilised on links to enhance the accessibility of the site allowing for screen readers to accurately pick up information.
+
+### Contrast and Readability
+
+Coolers Contrast Checker was used to ensure sufficient contrast in colors chosen to make the content readable for users with visual impairments.
+
+### Alt Text for Images
+
+All images on the website include descriptive alternative text (alt text). This helps users with visual impairments understand the content and context of images even if they cannot see them.
+
+### Responsive Design
+
+The website is responsive, providing a seamless experience across various devices and screen sizes. This benefits users with different abilities and ensures a consistent and accessible user experience. Tested via Chrome DevTools and Responsive Design Checker as project progressed.
+
+### Manual Testing
+
+Manual testing for the site involves hands-on evaluation by human testers to ensure functionality, usability, and compatibility across various devices and browsers. By conducting the manual testing procedures below, we ensure the website functions smoothly, provides an optimal user experience, and meets desired standards.
+
+## Bugs and Fixes <a name="bugs-and-fixes"></a>
+
+Throughout the development process, we encountered and resolved various bugs to ensure a smooth and seamless user experience. Our rigorous testing procedures helped identify and address these issues promptly.
+
+- ### Mark-up Validation Testing Bugs ###
+
+- ### CSS Validation Testing Bugs ###
+
+- ### Javascript Validation Testing Bugs ###
+
+## Finished Product <a name="finished-product"></a>
+
+## Future Features <a name="future-features"></a>
+
+## Credits <a name="credits"></a>
+
+### Frameworks, Content and Code
+
+### Media
+
+## Conclusion <a name="conclusion"></a>
+
+## Acknowledgements <a name="acknowledgements"></a>
+- Amy Richardson, my course facillitator.
+- Rahul Lakahanpal, my mentor.
+- CI Tutor Support and Student Care.
+- Slack community for resources and daily motivation.
+- Fellow course students for sharing.
+- My own childhood tile-sliding puzzle.
+- Ozzy the dog.
