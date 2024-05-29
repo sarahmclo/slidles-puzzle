@@ -140,37 +140,44 @@ The structure of Slidles is designed for a seamless and intuitive user experienc
 
 ## Features
 
-### Logo
+### Header
+- **Logo**
 The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
 
 <img src="docs/slidles_logo.webp" alt="logo" width="500">
 
-### Favicon
+- **Favicon**
 Original creation designed in Adobe Illustrator this custom favicon stems from the designed logo which enhances recognition and improves user experience by providing a visual marker for the puzzle.
 
 <img src="docs/slidles_icon.webp" alt="favicon" width="100">
 
-### Header
-### Timer
+### Main Content
+- **Timer**
 Tracks the time taken to solve each puzzle, adding an element of challenge.
 
-### Moves
+- **Moves**
 Counts the number of moves made, encouraging strategic thinking.
 
-### Audio
+- **Audio**
 Subtle sound effects enhance the interactive experience without being distracting.
 Calming audio available with off/on toggle, muted initially.
 
-### Main Content
-### Puzzle
+- **Puzzle**
 The core feature, designed to be engaging and rewarding, with varying levels of difficulty.
 
-### Buttons
+- **Buttons**
+A clear play button and hint Button allow for clear UX for navigating game.
 
-### Modals
+- **Modals**
+Info modal is discreet but obvious and contains relevant info on how to pplay the game.
+Hint modal gives the user an extra boost on how to solve the puzzle.
 
 ### Footer
-Contains essential social media links for further engagement and contact information.
+- **Social Networks**
+Contains essential social media links for further engagement.
+
+- **Contact Information**
+Displaying important info on how to contact creator, with links.
 
 ## Technologies Utilised <a name="technologies-utilised"></a>
 
