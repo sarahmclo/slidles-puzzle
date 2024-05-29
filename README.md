@@ -57,16 +57,35 @@ Shields.io badges
 Our primary focus is on creating a seamless, enjoyable user experience. Slidles is designed with simplicity in mind, ensuring that users can navigate and play without any hassle. The vibrant design elements enhance engagement, making the puzzle-solving experience delightful and satisfying.
 
 ## Project Goals
+The main goals of the Slidles project are to:
+- Provide an accessible, engaging puzzle game for all ages.
+- Combine classic gameplay with a modern, visually appealing interface.
+- Ensure a smooth, intuitive user experience across all devices.
 
 ## User Stories
+- As a user, I want to easily understand how to play the game without needing extensive instructions.
+- As a user, I want the game to be challenging yet solvable, providing a sense of accomplishment.
+- As a user, I want the design to be visually appealing and not overwhelming.
 
 ## Target Audience Goals
+- Enjoy a quick, engaging mental challenge during short breaks.
+- Experience a visually pleasing game that is easy to navigate.
+- Feel a sense of achievement after solving puzzles.
 
 ## Site Owner Goals
+- Attract and retain a broad audience with an engaging and well-designed puzzle game.
+- Create a community of users who return to the game regularly.
+- Ensure the site is easy to maintain and update with new features and puzzles.
 
 ## First Time User Goals
+- Quickly understand how to play the game.
+- Find the interface intuitive and the design appealing.
+- Enjoy the initial experience and feel motivated to return.
 
 ## Return User Goals
+- Experience new puzzles and challenges to keep the game engaging.
+- Find improvements and updates that enhance the gameplay.
+- Feel a sense of progression and increasing skill.
 
 ## Design <a name="design"></a>
 
@@ -106,9 +125,10 @@ Monospace was employed so the timer and moves section were not moving around pag
 
 <img src="docs/fonts/montserrat.webp" alt="montserrat font" width="400">
 <img src="docs/fonts/neue-helvetica.webp" alt="neue helvetica font" width="400">
-<img src="docs/fonts/neue-helvetica.webp" alt="monospace font" width="400">
+<img src="docs/fonts/monospace.webp" alt="monospace font" width="400">
 
 - ### Imagery
+Minimal imagery is used, focusing on the tiles and the puzzle interface to keep the design clean and straightforward.
 
 - **Content Hero Images**
 All images were orignially created, optimised and converted to webp with [Convertio](https://convertio.co/).
@@ -131,6 +151,52 @@ Wireframes for this site were created with [Figma](https://figma.com/).
 ### Structure
 The structure of Slidles is designed for a seamless and intuitive user experience, with clear content hierarchy, consistent navigation and responsive design principle.
 
+### Content Hierarchy
+1. **Puzzle Area**: Central focus for gameplay.
+2. **Timer and Moves Counter**: Visible to track progress.
+3. **Navigation**: Easy access to new games, instructions, and settings.
+4. **Footer**: Essential links and information.
+
+### Navigation
+- **Main Menu**: Links to start a game, instructions, and settings.
+- **Footer Links**: Additional resources and contact info.
+
+### Page Structure
+- **Header**: Logo and main navigation.
+- **Main Content**: Central puzzle area.
+- **Sidebar (if applicable)**: Game options and settings.
+- **Footer**: Secondary navigation and contact details.
+
+### Grid System/Flexbox
+- **Flexbox**: Ensures responsive, adaptive layout.
+- **Dynamic Resizing**: Elements adjust based on screen size.
+
+### Consistency
+- **Design Elements**: Uniform colors, typography, and imagery.
+- **Interaction**: Predictable behavior for interactive elements.
+- **Layout**: Consistent across pages and devices.
+
+### Whitespace
+- **Enhances Readability**: Avoids clutter and improves focus.
+- **Improves Navigation**: Clearly separates sections.
+
+### Responsive Design
+- **Mobile-Friendly**: Consistent experience on all devices.
+- **Touch-Friendly**: Effective touch inputs.
+
+### Accessibility
+- **Keyboard Navigation**: Fully functional via keyboard.
+- **Screen Reader Support**: Descriptive alt text and ARIA labels.
+- **Color Contrast**: High contrast for visual impairments.
+
+### User Flow
+1. **Landing Page**: Brief introduction to the game.
+2. **Game Start**: Immediate access to gameplay.
+3. **Gameplay**: Smooth interaction with visible progress.
+4. **Completion**: Clear feedback with options to start a new game or share.
+
+By focusing on these structural elements, Slidles provides an engaging, enjoyable, and accessible experience for all users.
+
 ### The 5 Elements
 1. **Strategy**: Offering a classic puzzle game with a modern twist.
 2. **Scope**: Focusing on a single, well-designed puzzle game.
@@ -139,10 +205,11 @@ The structure of Slidles is designed for a seamless and intuitive user experienc
 5. **Surface**: Bright, vibrant design elements create an engaging experience.
 
 ## Features
+![slidles-features](docs/slidles-features.webp)
 
 ### Header
 - **Logo**
-The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
+A simple, recognisable logo that reflects the game's playful and modern aesthetic, logo is an original creation in Adobe Illustrator.
 
 <img src="docs/slidles_logo.webp" alt="logo" width="500">
 
@@ -243,14 +310,18 @@ To contribute or check the code, you can:
 
 ### Validation Testing
 ## HTML
+![markup-validation](docs/bugs/html-markup-validation.webp)
 
 ## CSS
+![css-validation](docs/bugs/css.validation.webp)
 
 ## Javascript
+![javascript-testing](docs/bugs/jshint.webp)
 
 ## Accessibility
 
 ### Lighthouse Testing
+![lighthouse-testing](docs/bugs/lighthouse-test-desktop.webp)
 
 ### Semantic HTML
 
@@ -276,6 +347,21 @@ The website is responsive, providing a seamless experience across various device
 
 Manual testing for the site involves hands-on evaluation by human testers to ensure functionality, usability, and compatibility across various devices and browsers. By conducting the manual testing procedures below, we ensure the website functions smoothly, provides an optimal user experience, and meets desired standards.
 
+- **Navigation Testing:** Manually testing the navigation menu ensured all links are working correctly and directing users to the intended pages.
+The navigation menu is responsive and displays properly on different devices and screen sizes.
+- **Subscribe Form Testing:** Testing the subscribe form ensured it functions correctly, allowing users to submit their information successfully. Validation messages were checked and ensured they appear when required fields are left blank or invalid data is entered.
+- **Responsive Design Testing:** Testing the website on various devices (desktop, mobile, tablet) has ensured responsiveness and proper layout adaptation.
+It is verified that all content remains accessible and readable across different screen sizes.
+- **Content Hierarchy Testing:** Verified that the content hierarchy is maintained throughout the website, with clear headings, subheadings, and sections.
+Content is logically organized and easy to navigate for users.
+- **Cross-browser Compatibility Testing:** The website has been tested on different web browsers in Browserstack (Chrome, Firefox) to ensure compatibility and consistent performance. Layout and functionality issues specific to certain browsers have been addressed accordingly.
+- **Form Submission Testing:** Subscribe form has been submitted with valid data and ensures successful submission and confirmation.
+- **Page Structure Testing:** The ayout and structure of individual pages are consistent and aligned with the design specifications.
+There are no formatting issues or discrepancies in the placement of content elements.
+- **Accessibility Testing:** The website has been tested using accessibility tools to ensure compatibility and adherence to accessibility standards.
+Proper labeling, alt text for images, and other accessibility features have been included.
+- **Performance Testing:** The website's performance has been evaluated using tools like DevTools, WC3 Validator and Lighthouse to assess factors such as page load speed, performance metrics, and optimization opportunities.
+
 ## Bugs and Fixes <a name="bugs-and-fixes"></a>
 
 Throughout the development process, we encountered and resolved various bugs to ensure a smooth and seamless user experience. Our rigorous testing procedures helped identify and address these issues promptly.
@@ -294,6 +380,8 @@ Throughout the development process, we encountered and resolved various bugs to 
 
 - ### CSS Validation Testing Bugs ###
 
+No CSS bugs detected
+
 - ### Javascript Validation Testing Bugs ###
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
@@ -305,8 +393,30 @@ Throughout the development process, we encountered and resolved various bugs to 
 | audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
 
 ## Finished Product <a name="finished-product"></a>
+Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
+
+<details>
+<summary>Mobile<a name="mobile"></a></summary>
+
+![mobile-index](docs/mobile.png)
+</details>
+
+<details>
+<summary>Desktop<a name="desktop"></a></summary>
+
+![mobile-index](docs/desktop.png)
+</details>
+
+<details>
+<summary>iPad<a name="iPad"></a></summary>
+
+![ipad-index](docs/iPad.png)
+</details>
 
 ## Future Features <a name="future-features"></a>
+- New puzzle levels and challenges.
+- Additional themes and color schemes.
+- Social sharing features to engage with friends.
 
 ## Credits <a name="credits"></a>
 
@@ -344,6 +454,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 * [The Noun Project](https://www.google.com/maps) Icons for info modal and volume on/off.
 
 ## Conclusion <a name="conclusion"></a>
+In conclusion, Slidles merges the timeless appeal of sliding puzzles with contemporary design elements, creating a visually captivating and intellectually engaging experience. Our aim is to offer a puzzle site that not only challenges the mind but also delights the senses, making it an ideal destination for both casual players and avid puzzle enthusiasts. Through Slidles, we strive to bring the joy of puzzles to a wider audience, blending art and entertainment in perfect harmony.
 
 ## Acknowledgements <a name="acknowledgements"></a>
 - Amy Richardson, my course facillitator.
