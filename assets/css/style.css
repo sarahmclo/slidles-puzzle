@@ -161,8 +161,10 @@ ol li {
     margin-bottom: 10px;
 }
 
-.hintButton-container {
+.hintButton-switchButton-container {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .playButton,
