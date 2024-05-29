@@ -40,8 +40,9 @@ main {
 
 /* Tagline */
 h4 {
-    padding-bottom: 30px;
+    padding: 0 20px 30px 20px;
 }
+
 
 /* Main content */
 /* Timer, moves, audio & info */
@@ -77,6 +78,7 @@ h4 {
     width: 25px;
     height: 25px;
     cursor: pointer;
+    display: flex;
 }
 
 .modal {
@@ -97,9 +99,47 @@ h4 {
 }
 
 .modal-logo {
-    width: 400px;
+    width: 200px;
     padding: 30px 0px 10px 0;
     height: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 30% auto; /* from top and centered */
+    padding: 20px;
+    border: 1px solid #252525;
+    width: 80%;
+}
+
+/* Info modal close button */
+.close {
+    float: right;
+    color: #8f8d8d;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #3f3f42;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr {
+    margin: 10px 5px 10px 5px;
+}
+
+.how-to-play,
+ol {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+ol li {
+    padding-bottom: 10px;
 }
 
 /* Puzzle */
@@ -186,4 +226,13 @@ a:active {
     color: inherit;
 }
 
-/* Media queries */
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Info Modal */
+    .modal { 
+        width: 50%; /* moves modal to right */
+        height: auto;
+        right: 25%; /* pulls modal back */
+    }
+}
