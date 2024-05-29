@@ -1,10 +1,10 @@
 # Slidles
 
-Mockup
+![Mock-Up]()
 
 Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, stausfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design, allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
 
-Live site
+[View Slidles Live Here]()
 
 Shields.io badges
 ![GitHub last commit]()
@@ -49,7 +49,6 @@ Shields.io badges
 9. [Future Features](#future-features)
 10. [Credits](#credits)
     - [Content and Code](#content-and-code)
-    - [Frameworks](#frameworks)
     - [Media](#media)
 11. [Conclusion](#conclusion)
 12. [Acknowledgements](#acknowledgements)
@@ -85,19 +84,34 @@ For my sliding puzzle project, I've drawn inspiration from a blend of traditiona
 ![ref-pic](docs/references.webp)
 
 - ### Colour Scheme
+A bright and vibrant colour scheme is used to make the game visually stimulating. Colours are carefully chosen to create a balance between aesthetics and functionality.
 
 - **Colour Palette**
+The colour palette fir this site was devised in keeping with the original SLIDLES logo and created in [Adobe Color](https://color.adobe.com/).
+
+<img src="docs/colour-palette.webp" width="500">
 
 - **Logo**
+The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
+
+<img src="docs/wireframes/slidles_logo.webp" width="500">
 
 - ### Typography
+Clear, easy-to-read fonts complement the vibrant design without distracting from gameplay.
 
 - **Fonts**
+The font Montserrat was carefully chosen and imported from [Google Fonts](https://fonts.google.com/).
+Neue-Helvetica was used in keeping with design inspiration.
+Monospace was employed so the timer and moves section were not moving around page whilst incrementing
+
+![Monteserrat](docs/fonts/montserrat.webp)
+![Helvetica Neue](docs/fonts/neue-helvetica.webp)
+![Monospace](docs/fonts/monospace.webp)
 
 - ### Imagery
 
 - **Content Hero Images**
-All images were optimised and converted to webp with [Convertio](https://convertio.co/).
+All images were orignially created, optimised and converted to webp with [Convertio](https://convertio.co/).
 
 ### Wireframes
 Wireframes serve as the blueprint for the website, outlining the layout and functionality of each page. They help us visualise the user experience and iterate on design concepts and scope before implementation.
@@ -127,14 +141,36 @@ The structure of Slidles is designed for a seamless and intuitive user experienc
 ## Features
 
 ### Logo
+The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
+
+<img src="docs/wireframes/slidles_logo.webp" alt="logo" width="500">
 
 ### Favicon
+Original creation designed in Adobe Illustrator this custom favicon stems from the designed logo which enhances recognition and improves user experience by providing a visual marker for the puzzle.
+
+<img src="docs/wireframes/slidles_icon.webp" alt="favicon" width="100">
 
 ### Header
+### Timer
+Tracks the time taken to solve each puzzle, adding an element of challenge.
+
+### Moves
+Counts the number of moves made, encouraging strategic thinking.
+
+### Audio
+Subtle sound effects enhance the interactive experience without being distracting.
+Calming audio available with off/on toggle, muted initially.
 
 ### Main Content
+### Puzzle
+The core feature, designed to be engaging and rewarding, with varying levels of difficulty.
+
+### Buttons
+
+### Modals
 
 ### Footer
+Contains essential social media links for further engagement and contact information.
 
 ## Technologies Utilised <a name="technologies-utilised"></a>
 
@@ -249,9 +285,38 @@ Throughout the development process, we encountered and resolved various bugs to 
 
 ## Credits <a name="credits"></a>
 
-### Frameworks, Content and Code
+### Content and Code
+
+* Puzzle, text and imagery all original creations.
+* [Code-Institute](https://codeinstitute.net/ie/?nab=0) Walkthrough projects content.
+* [MDN](https://developer.mozilla.org/en-US/) Web docs and tutorials.
+* [StackOverflow](https://stackoverflow.com/) Troubleshooting code.
+* [W3Schools](https://www.w3schools.com/) Javascript intro tutorials for audio and sound effects.
+* [CSS Tricks - HTML Picture](https://css-tricks.com) Further CSS tutorials.
+* [Web Dev](https://web.dev.com) Tutorials in javascript and responsivity.
+* [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) Flexbox tutorials.
+* [Codu](https://www.codu.co/) Inspiration.
+* [Gitpod](https://www.gitpod.io/) Write, commit and push code to GitHub. 
+* [GitHub](https://github.com/) Utilise for hosting, amending and viewing.
+* [Figma](https://figma.com/) Create the detailed low-fidelity wireframes in the design phase.
+* [Codepen](https://codepen.io/) Practice adn troubleshoot code ideas/bugs.
+* [JShint](https://jshint.com/) Javascript code validation and troubleshooting.
+* [Responsive Design Checker](https://responsivedesignchecker.com/) Test responsiveness on various devices.
+* [Am I Responsive](https://ui.dev/amiresponsive) Generate Mock Up Image of site in a responsive manner.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools) Utilised regularly in development for code review and to test responsiveness.
+* [Browserstack](https://www.browserstack.com/) Browserstack was utilised to test browser compatility across multiple devices.
+* [Shields.io](https://shields.io/) Shields.io used to create dynamic badges for Readme.
+* [Google Fonts](https://fonts.google.com/) Import carefully selected fonts.
+* [Coolers Contrast Checker](https://coolors.co/) Ensure colour contrast inline with guidelines.
+* [Adobe Colors](https://color.adobe.com/) Generate pleasing colour palette in keeping with logo and overall design.
 
 ### Media
+* [Adobe Illustrator](https://www.adobe.com/) All original imagery created in Adobe Illustrator.
+* [FontAwesome](https://fontawesome.com/) Icons for social networks.
+* [Favicon](https://favicon.io/) Created my own favicon from logo.
+* [Convertio](https://convertio.co/document-converter/) Images converted to webp for optimal loading.
+* [Pixabay](https://www.pixabay.com) Audio (carl-orff-gassenhauer-hans-neusiedler-180891.mp3)and tile slide sound effect.
+* [The Noun Project](https://www.google.com/maps) Icons for info modal and volume on/off.
 
 ## Conclusion <a name="conclusion"></a>
 
