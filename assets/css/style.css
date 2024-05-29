@@ -39,7 +39,7 @@ main {
 }
 
 /* Tagline */
-h4 {
+.tagline {
     padding: 0 20px 30px 20px;
 }
 
