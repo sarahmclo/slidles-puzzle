@@ -36,8 +36,8 @@
         <div class="timer-moves-audio-info-container">
             <!-- Timer and moves -->
             <div class="timer-moves">
-                <p>Timer:<span id="timer">0:00</span></p>
-                <p>Moves:<span id="moves">0</span></p>
+                <p><span id="timer">0:00</span></p>
+                <p>Moves: <span id="moves">0</span></p>
             </div>
             <!-- Audio and info -->
             <div class="audio-info">
@@ -46,9 +46,16 @@
                     <audio src="assets/audio/carl-orff-gassenhauer-hans-neusiedler-180891.mp3" loop></audio>
                 </div>
                 <!-- Info modal -->
-                <img id="info-modal" src="assets/images/info-icon.webp" alt="information modal trigger on how to play" aria-label="The letter i surrounded by a circle">
+                <img id="info-modal" src="assets/images/info-icon.webp" alt="information modal trigger on how to play"
+                    aria-label="The letter i surrounded by a circle">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img class="modal-logo" src="assets/images/slidles_logo.webp" alt="slidles logo">
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- Puzzle -->
