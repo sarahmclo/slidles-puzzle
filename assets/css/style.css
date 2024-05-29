@@ -126,8 +126,8 @@ h4 {
     cursor: pointer;
 }
 
-hr {
-    margin: 10px 5px 10px 5px;
+.how-to-play, h4 {
+    padding: 10px;
 }
 
 .how-to-play,
