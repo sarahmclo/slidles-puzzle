@@ -33,22 +33,25 @@ main {
 .logo {
     width: 100%;
     height: auto;
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
     max-width: 380px;
+    margin-top: 30px;
 }
 
 /* Tagline */
 h4 {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /* Main content */
-/* Puzzle */
+
+/* Timer, moves, audio & info */
+/* flex allows all to be on same line, add gap */
 .timer-moves-audio-info-container {
 display: flex;
 justify-content: space-between;
 }
-
+/* flex allows all to be on same line, add gap */
 .timer-moves {
     display: flex;
     align-items: center;
@@ -61,7 +64,10 @@ justify-content: space-between;
     gap: 10px;
 }
 
-#puzzle-container {}
+/* Puzzle */
+#puzzle-container {
+    padding-top: 5px;
+}
 
 .puzzle1 {
     border: #252525 solid 1px;
