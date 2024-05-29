@@ -2,9 +2,15 @@
 
 Mockup
 
-Introduction
+Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, stausfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design, allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
+
+Live site
 
 Shields.io badges
+![GitHub last commit]()
+![GitHub language count]()
+![GitHub top language]()
+![W3C Validation]()
 
 ## Table of Contents
 1. [User Experience (UX)](#user-experience)
@@ -49,6 +55,7 @@ Shields.io badges
 12. [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)<a name="user-experience"></a>
+Our primary focus is on creating a seamless, enjoyable user experience. Slidles is designed with simplicity in mind, ensuring that users can navigate and play without any hassle. The vibrant design elements enhance engagement, making the puzzle-solving experience delightful and satisfying.
 
 ## Project Goals
 
@@ -65,10 +72,17 @@ Shields.io badges
 ## Design <a name="design"></a>
 
 ### Design Philosophy
+Our design philosophy centres on simplicity, vibrancy and user engagement. We believe that a clean aesthetically pleasing design enhances the user's focus on the puzzle itself.
 
 ### Design Choices
+- **Minimalist Layout**: Ensures the focus remains on the puzzle.
+- **Responsive Design**: Provides a seamless experience across all devices.
+- **Interactive Elements**: Engages users through dynamic feedback.
 
-- **Reference Images**
+- **References**
+For my sliding puzzle project, I've drawn inspiration from a blend of traditional sliding puzzles and the minimalist elegance of Pantone Colour swatches. The clean lines and abstract forms of Picasso's line drawings contribute to the aesthetic. The puzzle itselp is like a polaroid snapshot, while the engaging interactivity of New York Times games inspire and shape the user experience. This fusion of artistic and functional elements create a uniquely captivating and visually appealing puzzle game.
+
+![ref-pic](docs/references.webp)
 
 - ### Colour Scheme
 
@@ -86,14 +100,29 @@ Shields.io badges
 All images were optimised and converted to webp with [Convertio](https://convertio.co/).
 
 ### Wireframes
+Wireframes serve as the blueprint for the website, outlining the layout and functionality of each page. They help us visualise the user experience and iterate on design concepts and scope before implementation.
 
-- **Mobile Wireframes**
+Wireframes for this site were created with [Figma](https://figma.com/).
 
-- **Desktop Page Wireframes**
+- **Sketche Wireframes**
+
+<img src="docs/wireframes/wireframe-sketch-mobile.webp" width="500">
+
+<img src="docs/wireframes/wireframe-sketch-desktop.webp" width="500">
+
+- **Mobile, Tablet, Desktop Wireframes**
+
+![wireframes](docs/wireframes/slidles-wireframes.webp)
 
 ### Structure
+The structure of Slidles is designed for a seamless and intuitive user experience, with clear content hierarchy, consistent navigation and responsive design principle.
 
 ### The 5 Elements
+1. **Strategy**: Offering a classic puzzle game with a modern twist.
+2. **Scope**: Focusing on a single, well-designed puzzle game.
+3. **Structure**: Clear navigation and intuitive gameplay.
+4. **Skeleton**: Wireframes ensure a user-friendly layout.
+5. **Surface**: Bright, vibrant design elements create an engaging experience.
 
 ## Features
 
