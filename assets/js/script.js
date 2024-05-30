@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //Therefore the blank tile is located at row 2 and column 2, which means it is the third row and the third column from the top-left corner of the puzzle.
     let blankTileRow = 2; //Row index of blank tile (based on 0)
     let blankTileCol = 2; //Columnindex of blank tile (based on 0)
-    
     let moves = 0; //Start counter at 0
     let timerInterval;
     let seconds = 0;
@@ -82,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
         [tiles[tile1Index].textContent, tiles[tile2Index].textContent] = [tiles[tile2Index].textContent, tiles[tile1Index].textContent];
         [tiles[tile1Index].className, tiles[tile2Index].className] = [tiles[tile2Index].className, tiles[tile1Index].className];
     }
-});
 
 //Function to reset puzzle
 function resetGame() {
@@ -132,6 +130,7 @@ playButton.addEventListener, ('click', () => {
         //Minutes and seconds - stack overflow
         timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
     }, 1000);
+});
 
 //Function to get direction of tile move
 function getDirection(row, col) {
