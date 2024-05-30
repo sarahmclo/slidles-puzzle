@@ -149,16 +149,58 @@ ol li {
 /* CSS Cells https://developer.mozilla.org/en-US/docs/Glossary/Grid_Cell */
 .grid-container {
     display: grid;
+    grid-template-columns:  repeat(3, 1fr); /* Makes 3 equal columns in backgroound url */
+    grid-gap: 2px; /* Gaps in image to form tiles */
 }
 
 .tile {
-
+    width: 100%; /*This makes tile occupy full with in grid cell */
+    height: 0;
+    cursor: pointer;
 }
 
-.tile1, .tile9 {
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
     background: url(../images/pink-slidle.webp);
-
+    width: 100px;
+    height: 100px;
 }
+
+.tile1 {
+    background-position: left top;
+ }
+ 
+ .tile2 {
+    background-position: center top;
+ }
+ 
+ .tile3 {
+    background-position: right top;
+ }
+ 
+ .tile4 {
+    background-position: left center;
+ }
+ 
+ .tile5 {
+    background-position: center center;
+ }
+ 
+ .tile6 {
+    background-position: right center;
+ }
+ 
+ .tile7 {
+    background-position: left bottom;
+ }
+ 
+ .tile8 {
+    background-position: center bottom;
+ }
+ 
+ .tile9 {
+    background: white;
+    cursor: default; /* Blank tile 9 */
+ }
 
 /* Buttons */
 #button-container {
