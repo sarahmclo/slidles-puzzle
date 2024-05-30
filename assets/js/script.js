@@ -116,7 +116,7 @@ tiles.forEach((tile, index) => { //line starts a loop over each tile element in 
 });
 
 //Add event listener for playButton click to shuffle tiles and start puzzle
-playButton.addEventListener, ('click', () => {
+playButton.addEventListener('click', () => {
     shuffle();
     gameStarted = true;
 

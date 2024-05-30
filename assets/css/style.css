@@ -59,6 +59,11 @@ main {
     gap: 10px;
 }
 
+#timer, #moves {
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
 .audio-info {
     display: flex;
     gap: 10px;
