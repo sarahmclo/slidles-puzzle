@@ -157,6 +157,7 @@ ol li {
     width: 100%; /*This makes tile occupy full with in grid cell */
     height: 0;
     cursor: pointer;
+    border: 1px solid #3f3f42;
 }
 
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
