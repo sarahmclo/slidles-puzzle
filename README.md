@@ -477,3 +477,5 @@ In conclusion, Slidles merges the timeless appeal of sliding puzzles with contem
 - Fellow course students for sharing.
 - My own childhood tile-sliding puzzle.
 - Ozzy the dog.
+
+[🔼 Back to top](#Slidles)
