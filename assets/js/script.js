@@ -26,13 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    //Add event listener for playButton click to shuffle tiles and start puzzle
-    playButton.addEventListener, () => {
-        shuffle();
-        gameStarted = true;
+    //Function to move a tile
+    function moveTile(direction){
+        let validMove=false;
+        switch(direction) {
+            //Use case and break in switch statement - control flow based on direction value
+        }
     }
 });
 
+//Add event listener for playButton click to shuffle tiles and start puzzle
+playButton.addEventListener, () => {
+    shuffle();
+    gameStarted = true;
+}
 //Add event listeners to tiles
 tiles.forEach((tile, index) => { //line starts a loop over each tile element in the tiles NodeList using the forEach method. It takes a callback function with parameters tile representing the current tile element and index representing the index of the current tile in the tiles NodeList.
     tile.addEventListener('click', () => {
