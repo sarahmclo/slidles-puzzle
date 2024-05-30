@@ -209,4 +209,4 @@ window.addEventListener("click", function (event) {
     if (event.target === hintModal) {
         hintModal.style.display = "none";
     }
-})
+});
