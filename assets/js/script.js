@@ -1,15 +1,24 @@
 //Wait for DOM to finish loading before running puzzle
 document.addEventListener("DOMContentLoaded", function () {
     //Get playButton element
-    const playButton = document.querySelector(".playButton")
+    const playButton = document.querySelector(".playButton");
     //Get tile element
-    const tiles = document.querySelectorAll(".tile")
+    const tiles = document.querySelectorAll(".tile");
+    //Get timer
+    const timerDisplay = document.getElementById('timer');
+    //Get moves
+    const movesDisplay = document.getElementById('moves');
 
     //Puzzle Variables - blank tile position
     //Define two variables, blankTileRow and blankTileCol, which represent the row and column indices of a blank tile in a puzzle. These indices are 0-based, meaning the top-left tile is at index (0,0) and the bottom-right tile is at index (rows - 1, columns - 1).
     //Therefore the blank tile is located at row 2 and column 2, which means it is the third row and the third column from the top-left corner of the puzzle.
     let blankTileRow = 2; //Row index of blank tile (based on 0)
     let blankTileCol = 2; //Columnindex of blank tile (based on 0)
+    
+    let moves = 0; //Start counter at 0
+    let timerInterval;
+    let seconds = 0;
+    let minutes = 0;
     let gameStarted = false;
 
     //Function to shuffle tiles
@@ -18,27 +27,84 @@ document.addEventListener("DOMContentLoaded", function () {
     function shuffle() {
         for (let i = 0; i < 100; i++) {
             const directions = ['up', 'down', 'left', 'right'];
-            const randomIndex = Math.floor(Math.random() * 4)
+            const randomIndex = Math.floor(Math.random() * 4);
             //using Math.floor(Math.random() * 4), you get one of the four possible integers: 0, 1, 2, or 3. These integers are then used as indices to pick a random direction from the directions array, which contains the strings 'up', 'down', 'left', and 'right'
             //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
             const direction = directions[randomIndex];
-            moveTile(direciton);
+            moveTile(direction);
         }
     }
 
     //Function to move a tile
-    function moveTile(direction){
-        let validMove=false;
-        switch(direction) {
+    function moveTile(direction) {
+        let validMove = false;
+        switch (direction) {
             //Use case and break in switch statement - control flow based on direction value
+            case 'up':
+                if (blankTileRow > 0) {
+                    swapTiles(blankTileRow, blankTileCol, blankTileRow - 1, blankTileCol);
+                    blankTileRow--;
+                    validMove = true;
+                }
+                break;
+            case 'down':
+                if (blankTileRow < 2) {
+                    swapTiles(blankTileRow, blankTileCol, blankTileRow + 1, blankTileCol);
+                    blankTileRow++;
+                    validMove = true;
+                }
+                break;
+            case 'left':
+                if (blankTileCol > 0) {
+                    swapTiles(blankTileRow, blankTileCol, blankTileRow, blankTileCol - 1);
+                    blankTileCol--;
+                    validMove = true;
+                }
+                break;
+            case 'right':
+                if (blankTileCol < 2) {
+                    swapTiles(blankTileRow, blankTileCol, blankTileRow, blankTileCol + 1);
+                    blankTileCol++;
+                    validMove = true;
+                }
+                break;
         }
+        if (validMove && gameStarted) {
+            moves++;
+            movesDisplay.textContent = moves;
+        }
+    }
+
+    // Function to swap tiles
+    function swapTiles(row1, col1, row2, col2) {
+        const tile1Index = row1 * 3 + col1;
+        const tile2Index = row2 * 3 + col2;
+        [tiles[tile1Index].textContent, tiles[tile2Index].textContent] = [tiles[tile2Index].textContent, tiles[tile1Index].textContent];
+        [tiles[tile1Index].className, tiles[tile2Index].className] = [tiles[tile2Index].className, tiles[tile1Index].className];
     }
 });
 
-//Add event listener for playButton click to shuffle tiles and start puzzle
-playButton.addEventListener, () => {
-    shuffle();
-    gameStarted = true;
+//Function to reset puzzle
+function resetGame() {
+    // Reset the tiles to their initial positions without numbers
+    tiles.forEach((tile, index) => {
+        tile.textContent = ""; // Remove the numbers from tiles
+        tile.className = `tile tile${index + 1}`;
+    });
+
+    //Reset blank
+    blankTileCol = 2;
+    blankTileRow = 2;
+    // Reset the moves counter
+    moves = 0;
+    movesDisplay.textContent = moves;
+    gameStarted = false;
+
+    // Reset the timer
+    clearInterval(timerInterval);
+    seconds = 0;
+    minutes = 0;
+    timerDisplay.textContent = '0:00';
 }
 //Add event listeners to tiles
 tiles.forEach((tile, index) => { //line starts a loop over each tile element in the tiles NodeList using the forEach method. It takes a callback function with parameters tile representing the current tile element and index representing the index of the current tile in the tiles NodeList.
@@ -50,6 +116,22 @@ tiles.forEach((tile, index) => { //line starts a loop over each tile element in 
         }
     });
 });
+
+//Add event listener for playButton click to shuffle tiles and start puzzle
+playButton.addEventListener, ('click', () => {
+    shuffle();
+    gameStarted = true;
+
+    //Start timer when game begins
+    timerInterval = setInterval(() => {
+        seconds++;
+        if (seconds === 60) {
+            minutes++;
+            seconds = 0;
+        }
+        //Minutes and seconds - stack overflow
+        timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    }, 1000);
 
 //Function to get direction of tile move
 function getDirection(row, col) {
@@ -63,6 +145,11 @@ function getDirection(row, col) {
         return 'right';
     }
 }
+
+//Reset puzzle when page loads
+resetGame();
+});
+
 /** Audio */
 //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
 function togglePlay() {
