@@ -168,8 +168,8 @@ ol li {
 
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
     background: url(../images/pink-slidle.webp);
-    width: 115px;
-    height: 115px;
+    width: 114px;
+    height: 114px;
 }
 
 .tile1 {
@@ -296,7 +296,9 @@ a:active {
         max-width: 500px;
     }
 
-    #puzzle-container {}
+    #puzzle-container {
+        width: 100%;
+    }
 
     .puzzle1 {
         width: 100%;

@@ -370,7 +370,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
 | Timer-moves-audio-info-container: get all on one line| Main content index.html | Chrome | MacBook | Yes | Use flexbox to and gap to space correctly  |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Audio - sound effect bug - not playing fast enough | Main content index.html | Chrome | Various | Yes | update to new trimmed audio and add preload:auto; to html |
 | Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
 | Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
 | Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
@@ -401,6 +401,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 | playButton not working| js.script | Chrome | Various | Yes | Event Listener incorrect|
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | add onClick="shuffle"() in html |
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | remove stray comma that was within code |
+| After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome | Various | Yes |  |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
