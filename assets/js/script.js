@@ -87,72 +87,72 @@ document.addEventListener("DOMContentLoaded", function () {
         [tiles[tile1Index].className, tiles[tile2Index].className] = [tiles[tile2Index].className, tiles[tile1Index].className];
     }
 
-//Function to reset puzzle
-function resetGame() {
-    // Reset the tiles to their initial positions without numbers
-    tiles.forEach((tile, index) => {
-        tile.textContent = ""; // Remove the numbers from tiles
-        tile.className = `tile tile${index + 1}`;
-    });
+    //Function to reset puzzle
+    function resetGame() {
+        // Reset the tiles to their initial positions without numbers
+        tiles.forEach((tile, index) => {
+            tile.textContent = ""; // Remove the numbers from tiles
+            tile.className = `tile tile${index + 1}`;
+        });
 
-    //Reset blank
-    blankTileCol = 2;
-    blankTileRow = 2;
-    // Reset the moves counter
-    moves = 0;
-    movesDisplay.textContent = moves;
-    gameStarted = false;
+        //Reset blank
+        blankTileCol = 2;
+        blankTileRow = 2;
+        // Reset the moves counter
+        moves = 0;
+        movesDisplay.textContent = moves;
+        gameStarted = false;
 
-    // Reset the timer
-    clearInterval(timerInterval);
-    seconds = 0;
-    minutes = 0;
-    timerDisplay.textContent = '0:00';
-}
-
-//Add event listeners to tiles
-tiles.forEach((tile, index) => { //line starts a loop over each tile element in the tiles NodeList using the forEach method. It takes a callback function with parameters tile representing the current tile element and index representing the index of the current tile in the tiles NodeList.
-    tile.addEventListener('click', () => {
-        const row = Math.floor(index / 3); //calculates the row index of the clicked tile based on its position in the tiles NodeList. Since there are 3 tiles per row, dividing the index by 3 and using Math.floor ensures we get the correct row index.
-        const col = index % 3; //calculates the column index of the clicked tile based on its position in the tiles NodeList. The modulo operator % gives the remainder of the division by 3, which gives the column index.
-        if (Math.abs(row - blankTileRow) + Math.abs(col - blankTileCol) === 1 && gameStarted) { //checks if the clicked tile is adjacent to the blank tile (located at blankTileRow and blankTileCol) by calculating the Manhattan distance. If the sum of the absolute differences in row and column indices is 1 (meaning they are adjacent) and the game has started (gameStarted is true), the condition is met.
-            moveTile(getDirection(row, col)); //If condition in previous true, this line calls the moveTile function with the direction returned by the getDirection function, passing the row and column indices of the clicked tile. This function is responsible for moving the tile in the appropriate direction.
-        }
-    });
-});
-
-//Add event listener for playButton click to shuffle tiles and start puzzle
-playButton.addEventListener('click', () => {
-    shuffle();
-    gameStarted = true;
-
-    //Start timer when game begins
-    timerInterval = setInterval(() => {
-        seconds++;
-        if (seconds === 60) {
-            minutes++;
-            seconds = 0;
-        }
-        //Minutes and seconds - stack overflow
-        timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-    }, 1000);
-});
-
-//Function to get direction of tile move
-function getDirection(row, col) {
-    if (row < blankTileRow) {
-        return 'up';
-    } else if (row > blankTileRow) {
-        return 'down';
-    } else if (col < blankTileCol) {
-        return 'left';
-    } else {
-        return 'right';
+        // Reset the timer
+        clearInterval(timerInterval);
+        seconds = 0;
+        minutes = 0;
+        timerDisplay.textContent = '0:00';
     }
-}
 
-//Reset puzzle when page loads
-resetGame();
+    //Add event listeners to tiles
+    tiles.forEach((tile, index) => { //line starts a loop over each tile element in the tiles NodeList using the forEach method. It takes a callback function with parameters tile representing the current tile element and index representing the index of the current tile in the tiles NodeList.
+        tile.addEventListener('click', () => {
+            const row = Math.floor(index / 3); //calculates the row index of the clicked tile based on its position in the tiles NodeList. Since there are 3 tiles per row, dividing the index by 3 and using Math.floor ensures we get the correct row index.
+            const col = index % 3; //calculates the column index of the clicked tile based on its position in the tiles NodeList. The modulo operator % gives the remainder of the division by 3, which gives the column index.
+            if (Math.abs(row - blankTileRow) + Math.abs(col - blankTileCol) === 1 && gameStarted) { //checks if the clicked tile is adjacent to the blank tile (located at blankTileRow and blankTileCol) by calculating the Manhattan distance. If the sum of the absolute differences in row and column indices is 1 (meaning they are adjacent) and the game has started (gameStarted is true), the condition is met.
+                moveTile(getDirection(row, col)); //If condition in previous true, this line calls the moveTile function with the direction returned by the getDirection function, passing the row and column indices of the clicked tile. This function is responsible for moving the tile in the appropriate direction.
+            }
+        });
+    });
+
+    //Add event listener for playButton click to shuffle tiles and start puzzle
+    playButton.addEventListener('click', () => {
+        shuffle();
+        gameStarted = true;
+
+        //Start timer when game begins
+        timerInterval = setInterval(() => {
+            seconds++;
+            if (seconds === 60) {
+                minutes++;
+                seconds = 0;
+            }
+            //Minutes and seconds - stack overflow
+            timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }, 1000);
+    });
+
+    //Function to get direction of tile move
+    function getDirection(row, col) {
+        if (row < blankTileRow) {
+            return 'up';
+        } else if (row > blankTileRow) {
+            return 'down';
+        } else if (col < blankTileCol) {
+            return 'left';
+        } else {
+            return 'right';
+        }
+    }
+
+    //Reset puzzle when page loads
+    resetGame();
 });
 
 /** Audio */
@@ -186,3 +186,27 @@ img.onclick = function () {
 span.onclick = function () {
     modal.style.display = "none";
 };
+
+/** Hint modal */
+//Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
+//Get hint button 
+let hintButton = document.querySelector(".hintButton");
+//Get hint modal element
+let hintModal = document.getElementById("hintModal");
+//Add click event listener to hint button
+hintButton.addEventListener("click", function () {
+    //Display hint modal
+    hintModal.style.display = "block";
+});
+//Close modal
+hintModal.addEventListener("click", function (event) {
+    if (event.target === hintModal || event.target.tagName === 'IMG') {
+        hintModal.style.display = "none";
+    }
+});
+//Close hint modal when click anywhere on modal (enhances UX)
+window.addEventListener("click", function (event) {
+    if (event.target === hintModal) {
+        hintModal.style.display = "none";
+    }
+})

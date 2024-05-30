@@ -402,6 +402,8 @@ Throughout the development process, we encountered and resolved various bugs to 
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | add onClick="shuffle"() in html |
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | remove stray comma that was within code |
 | After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome | Various | Yes |  |
+| Close hint modal bug | html/css/js.script | Chrome | Various | Yes | no "." in event.target |
+
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
