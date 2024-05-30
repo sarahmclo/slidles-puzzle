@@ -10,7 +10,7 @@ Shields.io badges
 ![GitHub last commit](https://img.shields.io/github/last-commit/sarahmclo/slidles-puzzle)
 ![GitHub language count](https://img.shields.io/github/languages/count/sarahmclo/slidles-puzzle)
 ![GitHub top language](https://img.shields.io/github/languages/top/sarahmclo/slidles-puzzle)
-![W3C Validation]()
+![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fsarahmclo.github.io%2Fslidles-puzzle%2F)
 
 ## Table of Contents
 1. [User Experience (UX)](#user-experience)
