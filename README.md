@@ -391,6 +391,8 @@ No CSS bugs detected
 | Puzzle-container make gaps in grid to section tiles| css | Chrome | Various | Yes | usee css display: grid and style grid-gap |
 | puzzle image not showing| css | Chrome | Various | Yes | change cell ids to represent columns 1,2,3 and row1,2,3 |
 | Puzzle image not lining up| css | Chrome | MacBook | Yes | Update tile dimensions true to size of image, essential that width and height exact for image to display in correct aspect ratio and image shown completely |
+| tile borders | css | Chrome | Various | Yes | amend border to surrounding container rather than each individual tile |
+| Shuffle tiles when playButton clicked | js.script | Chrome | Various | Yes | use tile direction array, shuffle() function and math.floor |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.

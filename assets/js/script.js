@@ -1,6 +1,14 @@
 //Wait for DOM to finish loading before running puzzle
 document.addEventListener("DOMContentLoaded", function() {
+    //Get playButton element
+    const playButton = document.getElementByquerySelector("playButton")
+    //Get tile element
+    const tiles = document.getElementByquerySelectorAll(".tile")
 
+    //Function to shuffle tiles
+    function shuffle() {
+        
+    }
 });
 
 /** Audio */

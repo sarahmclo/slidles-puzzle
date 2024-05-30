@@ -151,8 +151,8 @@ ol li {
     display: grid;
     grid-template-columns:  repeat(3, 1fr); /* Makes 3 equal columns in backgroound url */
     grid-gap: 2px; /* Gaps in image to form tiles */
-
     border: 1px solid #3f3f42;
+    margin-bottom: 15px;
 }
 
 .tile {
