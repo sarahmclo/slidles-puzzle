@@ -1,15 +1,16 @@
 //Wait for DOM to finish loading before running puzzle
 document.addEventListener("DOMContentLoaded", function() {
     //Get playButton element
-    const playButton = document.ByquerySelector("playButton")
+    const playButton = document.querySelector(".playButton")
     //Get tile element
-    const tiles = document.ByquerySelectorAll(".tile")
+    const tiles = document.querySelectorAll(".tile")
 
     //Puzzle Variables - blank tile position
     //Define two variables, blankTileRow and blankTileCol, which represent the row and column indices of a blank tile in a puzzle. These indices are 0-based, meaning the top-left tile is at index (0,0) and the bottom-right tile is at index (rows - 1, columns - 1).
     //Therefore the blank tile is located at row 2 and column 2, which means it is the third row and the third column from the top-left corner of the puzzle.
     let blankTileRow = 2; //Row index of blank tile (based on 0)
     let blankTileCol = 2; //Columnindex of blank tile (based on 0)
+    let gameStarted = false;
 
 
     //Function to shuffle tiles
@@ -27,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //Add event listener for playButton click to shuffle tiles and start puzzle
-    playButton.addEventListener('click'), () => {
-        shuffle;
+    playButton.addEventListener, () => {
+        shuffle();
         gameStarted =true;
     }
 });

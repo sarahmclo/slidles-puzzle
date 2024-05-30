@@ -394,7 +394,8 @@ No CSS bugs detected
 | tile borders | css | Chrome | Various | Yes | amend border to surrounding container rather than each individual tile |
 | Shuffle tiles when playButton clicked | js.script | Chrome | Various | Yes | use tile direction array, shuffle() function and math.floor https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random |
 | playButton and tiles not working| js.script | Chrome | Various | Yes | document.getElementByquerySelector("playButton")
-    const tiles = document.getElementByquerySelectorAll - incorrect id remove getElementBy|
+    const tiles = document.getElementByquerySelectorAll - incorrect id remove getElementBy and declare gameStarted variable|
+| Shuffle function incorrect| js.script | Chrome | Various | Yes | add parentheses |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
