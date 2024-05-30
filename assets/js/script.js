@@ -71,6 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (validMove && gameStarted) {
             moves++;
             movesDisplay.textContent = moves;
+
+            //Audio tile-slide click sound effect
+            var clickSound = document.getElementById("slide-click-sound");
+            clickSound.currentTime = 0; //Reset to beginning
+            clickSound.play(); //Play sound effect on click
         }
     }
 
@@ -104,6 +109,7 @@ function resetGame() {
     minutes = 0;
     timerDisplay.textContent = '0:00';
 }
+
 //Add event listeners to tiles
 tiles.forEach((tile, index) => { //line starts a loop over each tile element in the tiles NodeList using the forEach method. It takes a callback function with parameters tile representing the current tile element and index representing the index of the current tile in the tiles NodeList.
     tile.addEventListener('click', () => {

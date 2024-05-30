@@ -380,7 +380,9 @@ Throughout the development process, we encountered and resolved various bugs to 
 
 - ### CSS Validation Testing Bugs ###
 
-No CSS bugs detected
+|Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
+|-------------|-----------------------|---------|--------|:-----:|----------|
+| Moves & timer move around whilst incrementing| css/js.script | Chrome | Various | Yes | use monospace font |
 
 - ### Javascript Validation Testing Bugs ###
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
