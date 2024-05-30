@@ -43,7 +43,6 @@ main {
     padding: 0 20px 20px 20px;
 }
 
-
 /* Main content */
 /* Timer, moves, audio & info */
 /* flex allows all to be on same line, add gap */
@@ -146,13 +145,19 @@ ol li {
 }
 
 /* Puzzle */
-#puzzle-container {
-    padding-top: 5px;
-    padding-bottom: 10px;
+/* Grid Styles */
+/* CSS Cells https://developer.mozilla.org/en-US/docs/Glossary/Grid_Cell */
+.grid-container {
+    display: grid;
 }
 
-.puzzle1 {
-    border: #252525 solid 1px;
+.tile {
+
+}
+
+.tile1, .tile9 {
+    background: url(../images/pink-slidle.webp);
+
 }
 
 /* Buttons */

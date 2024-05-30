@@ -385,9 +385,9 @@ No CSS bugs detected
 - ### Javascript Validation Testing Bugs ###
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
-| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
-| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
-| audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
+| audio on-click| js.script | Chrome | Various | Yes | use on-click toggle |
+| js hint says variable togglePlay not in use| js.script | Chrome |Various | Yes | assign togglePlay in javascript not html - adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link |
+| Puzzle grid| html/js.script | Chrome | Various | Yes | use background url and css grid https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout|
 | audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
 | audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
 | audio on-click| js.script | Chrome | MacBook | Yes | use on-click toggle |
