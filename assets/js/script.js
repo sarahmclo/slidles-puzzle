@@ -15,7 +15,9 @@ function togglePlay() {
         document.getElementById("volume-icon").src = "assets/images/vol-off.webp";
     }
 }
-
+    //Assign togglePlay function to onclick event of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
+    document.getElementById("volume-icon").onclick = togglePlay;
+    
 /** Info modal */
 //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
 //Get info modal
