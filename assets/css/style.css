@@ -285,7 +285,7 @@ ol li {
 /* Created by & contact */
 .created-by {
     font-size: 12px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 10px 20px;
 }
 
 /* Disable colour on a tag when visited (for testing) */

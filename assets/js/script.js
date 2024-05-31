@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Function to shuffle tiles
     //Adapt code shuffle tiles array https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows
-    //i<100 allows the tiles shuffle sufficiently
+    //i<50 allows the tiles shuffle sufficiently
     function shuffle() {
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 50; i++) {
             const directions = ['up', 'down', 'left', 'right'];
             const randomIndex = Math.floor(Math.random() * 4);
             //using Math.floor(Math.random() * 4), you get one of the four possible integers: 0, 1, 2, or 3. These integers are then used as indices to pick a random direction from the directions array, which contains the strings 'up', 'down', 'left', and 'right'
@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const direction = directions[randomIndex];
             moveTile(direction);
         }
+        moves = 0;
+        movesDisplay.textContent = moves;
     }
 
     //Function to move a tile
@@ -68,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 break;
         }
-        if (validMove && gameStarted) {
+        if (validMove && gameStarted ) {
             moves++;
             movesDisplay.textContent = moves;
 
