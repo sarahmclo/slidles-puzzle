@@ -33,7 +33,7 @@ main {
 .logo {
     width: 100%;
     height: auto;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 15px 20px;
     max-width: 390px;
     margin-top: 20px;
 }
@@ -279,13 +279,13 @@ ol li {
     font-size: 34px;
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 20px 20px 10px 20px;
+    padding: 40px 20px 10px 20px;
 }
 
 /* Created by & contact */
 .created-by {
     font-size: 12px;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 /* Disable colour on a tag when visited (for testing) */
