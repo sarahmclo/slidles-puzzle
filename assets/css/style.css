@@ -35,7 +35,7 @@ main {
     height: auto;
     padding: 10px 20px 20px 20px;
     max-width: 390px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* Tagline */
@@ -257,34 +257,14 @@ ol li {
 }
 
 #hintImage {
-    display: none;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-#hintmodal .modal-content {
-    background-color: transparent;
-    margin: 15% auto;
-    border: none;
-    width: 100%;
-}
-
-#hintModal .modal-content-hint img {
-    max-width: 100%;
-    height: auto;
     border: 1px solid #252525;
-}
-
-.modal-content-hint {
-    /* from top and centered */
-    padding: 20px;
-    width: 80%;
 }
 
 /* Theme */
@@ -318,83 +298,13 @@ a:active {
 
 /* Media Query - Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .tagline {
-        font-size: 130%;
-        padding-bottom: 30px;
-    }
-
-    .logo {
-        max-width: 500px;
-    }
-
-    #puzzle-container {
-        width: 100%;
-    }
-
-    .puzzle1 {
-        width: 100%;
-    }
-
-    .hintButton-container {
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .playButton,
-    .hintButton,
-    .switchButton {
-        font-size: 24px;
-        font-weight: 300;
-        width: 170px;
-        height: 50px;
-        text-align: center;
-        line-height: 26px;
-        border-radius: 24px;
-    }
-
-    #volume-icon {
-        width: 30px;
-        height: 30px;
-    }
-
-    #info-modal {
-        width: 30px;
-        height: 30px;
-    }
-
-    p {
-        font-size: 1.4em;
-    }
-
-    button,
-    input,
-    textarea {
-        font-size: 1em;
-        padding: 0.5em 1em;
-    }
-
-    #social-networks {
-        font-size: 40px;
-        padding: 20px 20px 10px 20px;
-    }
-
-    .created-by {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .modal {
-        width: 80%;
-        /* moves modal to right */
-        height: 100%;
-        right: 10%;
-        /* pulls modal back */
-    }
+body {
+    margin-top: 5em;
 }
-
-/* Media query: tablets and larger (1024px and up) */
-@media screen and (min-width: 1024px) {
+}
+ 
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
 
     /* Info Modal */
     .modal {

@@ -2,11 +2,10 @@
 
 ![Mock-Up]()
 
-Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, stausfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design, allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
+Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, satisfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design, allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
 
 [View Slidles Live Here](https://sarahmclo.github.io/slidles-puzzle/)
 
-Shields.io badges
 ![GitHub last commit](https://img.shields.io/github/last-commit/sarahmclo/slidles-puzzle)
 ![GitHub language count](https://img.shields.io/github/languages/count/sarahmclo/slidles-puzzle)
 ![GitHub top language](https://img.shields.io/github/languages/top/sarahmclo/slidles-puzzle)
@@ -108,7 +107,7 @@ A bright and vibrant colour scheme is used to make the game visually stimulating
 - **Colour Palette**
 The colour palette fir this site was devised in keeping with the original SLIDLES logo and created in [Adobe Color](https://color.adobe.com/).
 
-<img src="docs/colour-palette.webp" alt="colour palette" width="500">
+<img src="docs/colour-palette.webp" alt="colour palette">
 
 - **Logo**
 The Slidles logo is an original creation using Adobe Illustrator and a starting point for the clean appearance of the puzzle and website.
@@ -123,9 +122,7 @@ The font Montserrat was carefully chosen and imported from [Google Fonts](https:
 Neue-Helvetica was used in keeping with design inspiration.
 Monospace was employed so the timer and moves section were not moving around page whilst incrementing
 
-<img src="docs/fonts/montserrat.webp" alt="montserrat font" width="400">
-<img src="docs/fonts/neue-helvetica.webp" alt="neue helvetica font" width="400">
-<img src="docs/fonts/monospace.webp" alt="monospace font" width="400">
+<img src="docs/fonts/fonts.webp" alt="fonts">
 
 - ### Imagery
 Minimal imagery is used, focusing on the tiles and the puzzle interface to keep the design clean and straightforward.
@@ -141,7 +138,6 @@ Wireframes for this site were created with [Figma](https://figma.com/).
 - **Sketch Wireframes**
 
 <img src="docs/wireframes/wireframe-sketch-mobile.webp" width="500">
-
 <img src="docs/wireframes/wireframe-sketch-desktop.webp" width="500">
 
 - **Mobile, Tablet, Desktop Wireframes**
@@ -395,15 +391,13 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Puzzle image not lining up| css | Chrome | MacBook | Yes | Update tile dimensions true to size of image, essential that width and height exact for image to display in correct aspect ratio and image shown completely |
 | tile borders | css | Chrome | Various | Yes | amend border to surrounding container rather than each individual tile |
 | Shuffle tiles when playButton clicked | js.script | Chrome | Various | Yes | use tile direction array, shuffle() function and math.floor https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random |
-| playButton and tiles not working| js.script | Chrome | Various | Yes | document.getElementByquerySelector("playButton")
-    const tiles = document.getElementByquerySelectorAll - incorrect id remove getElementBy and declare gameStarted variable|
+| playButton and tiles not working| js.script | Chrome | Various | Yes | document.getElementByquerySelector("playButton") incorrect id remove getElementBy and declare gameStarted variable|
 | Shuffle function incorrect| js.script | Chrome | Various | Yes | add parentheses |
 | playButton not working| js.script | Chrome | Various | Yes | Event Listener incorrect|
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | add onClick="shuffle"() in html |
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | remove stray comma that was within code |
 | After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome | Various | Yes |  |
 | Close hint modal bug | html/css/js.script | Chrome | Various | Yes | no "." in event.target |
-
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
@@ -467,7 +461,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [The Noun Project](https://www.google.com/maps) Icons for info modal and volume on/off.
 
 ## Conclusion <a name="conclusion"></a>
-In conclusion, Slidles merges the timeless appeal of sliding puzzles with contemporary design elements, creating a visually captivating and intellectually engaging experience. Our aim is to offer a puzzle site that not only challenges the mind but also delights the senses, making it an ideal destination for both casual players and avid puzzle enthusiasts. Through Slidles, we strive to bring the joy of puzzles to a wider audience, blending art and entertainment in perfect harmony.
+Slidles merges the timeless appeal of sliding puzzles with contemporary design elements, creating a visually captivating and intellectually engaging experience. Our aim is to offer a puzzle site that not only challenges the mind but also delights the senses, making it an ideal destination for both casual players and avid puzzle enthusiasts. Through Slidles, we strive to bring the joy of puzzles to a wider audience, blending art and entertainment in perfect harmony.
 
 ## Acknowledgements <a name="acknowledgements"></a>
 - Amy Richardson, my course facillitator.
