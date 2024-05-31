@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let seconds = 0;
     let minutes = 0;
     let gameStarted = false;
+    
+    //Add solution
+    const solution = ["1", "2", "3", "4", "5", "6", "7", "8", ""];
 
     //Function to shuffle tiles
     //Adapt code shuffle tiles array https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows
@@ -81,6 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Check if the puzzle is sloved after each tile move
             if (isSolved()) {
+                //Stop timer
+                clearInterval(timerInterval);
                 //Display "You solved Slidles!" mesage
                 alert("You solved Slidles!");
             }
@@ -97,9 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Function to reset puzzle
     function resetGame() {
+        
         // Reset the tiles to their initial positions without numbers
         tiles.forEach((tile, index) => {
-            tile.textContent = ""; // Remove the numbers from tiles
+            tile.textContent = index < 8 ? (index + 1).toString() : "";
+            //tile.textContent = ""; // Remove the numbers from tiles
             tile.className = `tile tile${index + 1}`;
         });
 
@@ -108,10 +115,10 @@ document.addEventListener("DOMContentLoaded", function () {
         blankTileRow = 2;
 
         // Check if puzzle is solved
-        if (isSolved()) {
-            alert("You solved Slidles!");
-        }
-        
+        //if (isSolved()) {
+        //    alert("You solved Slidles!");
+        //}
+
         // Reset the moves counter
         moves = 0;
         movesDisplay.textContent = moves;
