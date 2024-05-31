@@ -395,8 +395,8 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Shuffle function incorrect| js.script | Chrome | Various | Yes | add parentheses |
 | playButton not working| js.script | Chrome | Various | Yes | Event Listener incorrect|
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | add onClick="shuffle"() in html |
-| playButton not shuffling| html/js.script | Chrome | Various | Yes | remove stray comma that was within code |
-| After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome | Various | Yes |  |
+| playButton not shuffling| js.script | Chrome | Various | Yes | remove stray comma that was within code |
+| After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome | Various | Yes | Add function and event listener to play button which allows playButton to only shuffle at start of game |
 | Close hint modal bug | html/css/js.script | Chrome | Various | Yes | no "." in event.target |
 
 ## Finished Product <a name="finished-product"></a>
