@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //Display "You solved Slidles!" mesage
                 //Add setTimeout to stop alert from showing before last tile has moved
                 //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-                setTimeout(() => alert("You solved Slidles!"), delay);
+                setTimeout(() => alert("You solved Slidles!"), 100);
             }
         }
     }
