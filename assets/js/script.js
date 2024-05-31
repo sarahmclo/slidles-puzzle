@@ -82,12 +82,14 @@ document.addEventListener("DOMContentLoaded", function () {
             clickSound.currentTime = 0; //Reset to beginning
             clickSound.play(); //Play sound effect on click
 
-            // Check if the puzzle is sloved after each tile move
+            // Check if the puzzle is solved after each tile move
             if (isSolved()) {
                 //Stop timer
                 clearInterval(timerInterval);
                 //Display "You solved Slidles!" mesage
-                alert("You solved Slidles!");
+                //Add setTimeout to stop alert from showing before last tile has moved
+                //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+                setTimeout(() => alert("You solved Slidles!"), delay);
             }
         }
     }
@@ -113,11 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
         //Reset blank
         blankTileCol = 2;
         blankTileRow = 2;
-
-        // Check if puzzle is solved
-        //if (isSolved()) {
-        //    alert("You solved Slidles!");
-        //}
 
         // Reset the moves counter
         moves = 0;
