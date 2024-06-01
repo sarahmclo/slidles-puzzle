@@ -180,6 +180,32 @@ function getDirection(row, col) {
 resetGame();
 });
 
+//Switch puzzles
+let images = [
+    "url('assets/images/pink-slidle.webp')",
+    "url('assets/images/black-slidle.webp')",
+    "url('assets/images/yellow-slidle.webp')",
+    "url('assets/images/white-slidle.webp')"
+  ];
+  
+  let currentImageIndex = 0;
+  
+  function switchImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through images
+  
+    let tiles = document.querySelectorAll(".tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9");
+  
+    tiles.forEach((tile, index) => {
+      if (tile.classList.contains("tile9")) {
+        // Ensure the blank tile has a white background
+        tile.style.backgroundImage = "none";
+        tile.style.backgroundColor = "white";
+      } else {
+        tile.style.backgroundImage = images[currentImageIndex];
+      }
+    });
+  }
+
 /** Audio */
 //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
 //Assign togglePlay function to onclick event of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
