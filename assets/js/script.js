@@ -74,11 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
             moves++;
             movesDisplay.textContent = moves;
 
-            //Audio tile-slide click sound effect
-            var clickSound = document.getElementById("slide-click-sound");
-            clickSound.currentTime = 0; //Reset to beginning
-            clickSound.play(); //Play sound effect on click
-
             // Check if the puzzle is solved after each tile move
             if (isSolved()) {
                 //Stop timer
@@ -187,18 +182,27 @@ resetGame();
 
 /** Audio */
 //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
+//Assign togglePlay function to onclick event of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
+document.getElementById("volume-icon").onclick = togglePlay;
 function togglePlay() {
-    let audio = document.getElementsByTagName("audio")[0]; /* 0 v important here */
+    let audio = document.getElementsByTagName("audio")[0]; /* 0 important here */
     if (audio.paused) {
         audio.play();
         document.getElementById("volume-icon").src = "assets/images/vol-on.webp";
+        playSlideClickSound();
     } else {
         audio.pause();
         document.getElementById("volume-icon").src = "assets/images/vol-off.webp";
     }
 }
-//Assign togglePlay function to onclick event of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
-document.getElementById("volume-icon").onclick = togglePlay;
+    //Audio tile-slide click sound effect
+    function playSlideClickSound() {
+    var clickSound = document.getElementById("slide-click-sound");
+    clickSound.currentTime = 0; //Reset to beginning
+    clickSound.play(); //Play sound effect on click
+}
+
+
 
 /** Info modal */
 //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal

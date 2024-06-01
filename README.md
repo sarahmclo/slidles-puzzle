@@ -392,7 +392,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 | tile borders | css | Chrome | Various | Yes | amend border to surrounding container rather than each individual tile |
 | Shuffle tiles when playButton clicked | js.script | Chrome | Various | Yes | use tile direction array, shuffle() function and math.floor https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random |
 | playButton and tiles not working| js.script | Chrome | Various | Yes | document.getElementByquerySelector("playButton") incorrect id remove getElementBy and declare gameStarted variable|
-| Shuffle function incorrect| js.script | Chrome | Various | Yes | add parentheses |
+| Shuffle function incorrect | js.script | Chrome | Various | Yes | add parentheses |
 | playButton not working| js.script | Chrome | Various | Yes | Event Listener incorrect|
 | playButton not shuffling| html/js.script | Chrome | Various | Yes | add onClick="shuffle"() in html |
 | playButton not shuffling| js.script | Chrome | Various | Yes | remove stray comma that was within code |
@@ -400,6 +400,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Close hint modal bug | html/css/js.script | Chrome | Various | Yes | no "." in event.target |
 | Alert occurs when page is loaded as puzzle is solved | js.script | Chrome | Various | Yes | so remove issolved from reset game |
 | Alert occurs before last tile has moves | js.script | Chrome | Various | Yes | Add setTimeout to stop alert from showing before last tile has moved https://developer.mozilla.org/en-US/docs/Web/API/setTimeout |
+| Remove numbers display on tiles | js.script | Chrome | Various | Yes | Use font-size 0 |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.

@@ -170,6 +170,7 @@ ol li {
     background: url(../images/pink-slidle.webp);
     width: 114px;
     height: 114px;
+    font-size: 0px;
 }
 
 .tile1 {
