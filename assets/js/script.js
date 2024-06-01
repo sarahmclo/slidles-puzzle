@@ -1,12 +1,9 @@
 //Wait for DOM to finish loading before running puzzle
 document.addEventListener("DOMContentLoaded", function () {
-    //Get playButton element
+    //Get elements
     const playButton = document.querySelector(".playButton");
-    //Get tile element
     const tiles = document.querySelectorAll(".tile");
-    //Get timer
     const timerDisplay = document.getElementById('timer');
-    //Get moves
     const movesDisplay = document.getElementById('moves');
 
     //Puzzle Variables - blank tile position
@@ -25,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Function to shuffle tiles
     //Adapt code shuffle tiles array https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows
-    //i<50 allows the tiles shuffle sufficiently
+    //i<100 allows the tiles shuffle sufficiently
     function shuffle() {
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 100; i++) {
             const directions = ['up', 'down', 'left', 'right'];
             const randomIndex = Math.floor(Math.random() * 4);
             //using Math.floor(Math.random() * 4), you get one of the four possible integers: 0, 1, 2, or 3. These integers are then used as indices to pick a random direction from the directions array, which contains the strings 'up', 'down', 'left', and 'right'
@@ -89,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //Display "You solved Slidles!" mesage
                 //Add setTimeout to stop alert from showing before last tile has moved
                 //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-                setTimeout(() => alert("You solved Slidles!"), 100);
+                setTimeout(() => alert("Hurray! You solved Slidles!"), 100);
             }
         }
     }
