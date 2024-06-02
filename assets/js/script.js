@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   //  const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
                     //document.getElementById("winModal").innerHTML = message;
                 //}, 100);
-                document.getElementById("winModalTime").textContent = `${minutes}:${seconds}`;
+                document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`
                 document.getElementById("winModalMoves").textContent = `${moves}`;
             }
         }

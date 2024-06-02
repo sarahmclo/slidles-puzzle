@@ -59,7 +59,8 @@ main {
     gap: 10px;
 }
 
-#timer, #moves {
+#timer,
+#moves {
     font-family: 'Courier New', 'Courier New', Courier, monospace;
     font-size: 20px;
 }
@@ -154,19 +155,30 @@ ol li {
 /* CSS Cells https://developer.mozilla.org/en-US/docs/Glossary/Grid_Cell */
 .grid-container {
     display: grid;
-    grid-template-columns:  repeat(3, 1fr); /* Makes 3 equal columns in backgroound url */
-    grid-gap: 2px; /* Gaps in image to form tiles */
+    grid-template-columns: repeat(3, 1fr);
+    /* Makes 3 equal columns in backgroound url */
+    grid-gap: 2px;
+    /* Gaps in image to form tiles */
     border: 1px solid #3f3f42;
     margin-bottom: 15px;
 }
 
 .tile {
-    width: 100%; /*This makes tile occupy full with in grid cell */
+    width: 100%;
+    /*This makes tile occupy full with in grid cell */
     height: 0;
     cursor: pointer;
 }
 
-.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+.tile1,
+.tile2,
+.tile3,
+.tile4,
+.tile5,
+.tile6,
+.tile7,
+.tile8,
+.tile9 {
     background: url(../images/pink-slidle.webp);
     width: 114px;
     height: 114px;
@@ -175,40 +187,41 @@ ol li {
 
 .tile1 {
     background-position: left top;
- }
- 
- .tile2 {
+}
+
+.tile2 {
     background-position: center top;
- }
- 
- .tile3 {
+}
+
+.tile3 {
     background-position: right top;
- }
- 
- .tile4 {
+}
+
+.tile4 {
     background-position: left center;
- }
- 
- .tile5 {
+}
+
+.tile5 {
     background-position: center center;
- }
- 
- .tile6 {
+}
+
+.tile6 {
     background-position: right center;
- }
- 
- .tile7 {
+}
+
+.tile7 {
     background-position: left bottom;
- }
- 
- .tile8 {
+}
+
+.tile8 {
     background-position: center bottom;
- }
- 
- .tile9 {
+}
+
+.tile9 {
     background: white;
-    cursor: default; /* Blank tile 9 */
- }
+    cursor: default;
+    /* Blank tile 9 */
+}
 
 /* Buttons */
 #button-container {
@@ -227,8 +240,7 @@ ol li {
 
 .playButton,
 .hintButton,
-.switchButton,
-.playAgainButton {
+.switchButton {
     background-color: #252525;
     border: 0.5px solid #ffffff;
     border-radius: 20px;
@@ -253,13 +265,6 @@ ol li {
 .hintButton:hover,
 .switchButton:hover {
     background-color: #F3A0BC;
-    color: #ffffff;
-    border: 0.5px solid #ffffff;
-    text-decoration: none;
-}
-
-.playAgainButton:hover {
-    background-color: #A8CD6E;
     color: #ffffff;
     border: 0.5px solid #ffffff;
     text-decoration: none;
@@ -299,6 +304,15 @@ ol li {
     width: 75%;
 }
 
+#winModal .playButton-container {
+    padding-top: 10px;
+}
+
+#winModal .playButton:hover {
+    background-color: #A8CD6E;
+}
+
+
 /* Theme */
 .theme {
     padding: 20px;
@@ -330,11 +344,11 @@ a:active {
 
 /* Media Query - Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-body {
-    margin-top: 5em;
+    body {
+        margin-top: 5em;
+    }
 }
-}
- 
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -349,8 +363,9 @@ body {
 
     .modal-content {
         margin: 13% auto;
+    }
 
-    }.win-modal-content {
-        width: 52%;
+    .win-modal-content {
+        width: 40%;
     }
 }
