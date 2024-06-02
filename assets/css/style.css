@@ -349,5 +349,8 @@ body {
 
     .modal-content {
         margin: 13% auto;
+
+    }.win-modal-content {
+        width: 52%;
     }
 }
