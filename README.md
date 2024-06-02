@@ -313,7 +313,7 @@ To contribute or check the code, you can:
 ![css-validation](docs/bugs/css.validation.webp)
 
 ## Javascript
-![javascript-testing](docs/bugs/jshint.webp)
+![javascript-testing](docs/bugs/jshint-val-fix.webp)
 
 ## Accessibility
 
