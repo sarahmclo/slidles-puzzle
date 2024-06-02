@@ -85,6 +85,7 @@ The main goals of the Slidles project are to:
 - Experience new puzzles and challenges to keep the game engaging.
 - Find improvements and updates that enhance the gameplay.
 - Feel a sense of progression and increasing skill.
+- Connect with like-minded puzzlers, either through the site or by sharing.
 
 ## Design <a name="design"></a>
 
