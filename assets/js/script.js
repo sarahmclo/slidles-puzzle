@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //Remove event listener from play button after initial shuffle
         //This ensures that it will not effect the moves counter
-        playButton.removeEventListener('click', shuffleTilesAndStart)
+       // playButton.removeEventListener('click', shuffleTilesAndStart)
     });
 
     //Function to get direction of tile move

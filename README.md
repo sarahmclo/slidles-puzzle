@@ -401,6 +401,9 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Alert occurs when page is loaded as puzzle is solved | js.script | Chrome | Various | Yes | so remove issolved from reset game |
 | Alert occurs before last tile has moves | js.script | Chrome | Various | Yes | Add setTimeout to stop alert from showing before last tile has moved https://developer.mozilla.org/en-US/docs/Web/API/setTimeout |
 | Remove numbers display on tiles | js.script | Chrome | Various | Yes | Use font-size 0 |
+| Change initial win aert to a modal and link play button | js.script | Chrome | Various | Yes |  |
+| Add users fin time and moves to win modal | js.script | Chrome | Various | Yes |  |
+| Reuse play button in win modal to reset game | js.script | Chrome | Various | Yes |  |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
