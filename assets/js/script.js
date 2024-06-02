@@ -86,14 +86,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 clearInterval(timerInterval);
                 document.getElementById("winModal").style.display = "block";
                 //Display "You solved Slidles!" mesage
+                document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`
+                document.getElementById("winModalMoves").textContent = `${moves}`;
                 //Add setTimeout to stop alert from showing before last tile has moved
                 //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
                 //setTimeout(() => {
-                  //  const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
-                    //document.getElementById("winModal").innerHTML = message;
+                //const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
+                //document.getElementById("winModal").innerHTML = message;
                 //}, 100);
-                document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`
-                document.getElementById("winModalMoves").textContent = `${moves}`;
             }
         }
     }
@@ -170,10 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
             //Minutes and seconds - stack overflow
             timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         }, 1000);
-
-        //Remove event listener from play button after initial shuffle
-        //This ensures that it will not effect the moves counter
-       // playButton.removeEventListener('click', shuffleTilesAndStart)
     });
 
     //Function to get direction of tile move
