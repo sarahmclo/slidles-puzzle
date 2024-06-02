@@ -44,6 +44,8 @@
                 <div class="audio">
                     <img id="volume-icon" src="assets/images/vol-off.webp" alt="volume toggle">
                     <audio src="assets/audio/carl-orff-gassenhauer-hans-neusiedler-180891.mp3" loop></audio>
+                    <!-- Tile sound effect -->
+                    <audio id="slide-click-sound" src="assets/audio/slide-click.mp3" preload="auto"></audio>
                 </div>
                 <!-- Info modal -->
                 <img id="info-modal" src="assets/images/info-icon.webp" alt="information modal trigger on how to play"
@@ -89,9 +91,6 @@
             <div id="cell33" class="tile tile9"></div>
         </div>
 
-        <!-- Tile sound effect -->
-        <audio id="slide-click-sound" src="assets/audio/slide-click.mp3" preload="auto"></audio>
-
         <!-- Buttons -->
         <div id="button-container">
             <div class="playButton-container">
@@ -118,12 +117,13 @@
                     <p>Time:
                         <span id="winModalTime"></span><br>Moves: <span id="winModalMoves"></span></p>
                     <div class="playButton-container">
-                        <button class="playButton" onclick="document.getElementById('winModal').style.display='none'; resetGame();">Play Again</button>
+                        <button class="playButton"
+                            onclick="document.getElementById('winModal').style.display='none'; resetGame();">Play
+                            Again</button>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- Theme -->
         <p class="theme">This week's theme: Birds & Colour</p>

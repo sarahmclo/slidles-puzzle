@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 clearInterval(timerInterval);
                 document.getElementById("winModal").style.display = "block";
                 //Display "You solved Slidles!" mesage
-                document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`
+                document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
                 document.getElementById("winModalMoves").textContent = `${moves}`;
                 //Add setTimeout to stop alert from showing before last tile has moved
                 //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
@@ -222,15 +222,32 @@ document.getElementById("volume-icon").onclick = togglePlay;
 
 function togglePlay() {
     let audio = document.getElementsByTagName("audio")[0]; /* 0 important here */
+    let slideClickSound = document.getElementById("slide-click-sound");
+    let volumeIcon = document.getElementById("volume-icon");
+
     if (audio.paused) {
         audio.play();
-        document.getElementById("volume-icon").src = "assets/images/vol-on.webp";
+        volumeIcon.src = "assets/images/vol-on.webp";
     } else {
         audio.pause();
-        document.getElementById("volume-icon").src = "assets/images/vol-off.webp";
+        volumeIcon.src = "assets/images/vol-off.webp";
+    }
+
+    // Mute or unmute both audios based on volume
+    if (audio.volume === 0) {
+        audio.muted = true;
+        slideClickSound.muted = true;
+    } else {
+        audio.muted = false;
+
+        // Check if the volume icon is vol-off
+        if (volumeIcon.src.includes("vol-off")) {
+            slideClickSound.muted = true; // Mute the slide-click-sound
+        } else {
+            slideClickSound.muted = false;
+        }
     }
 }
-
 /** Info modal */
 //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
 //Get info modal
