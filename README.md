@@ -343,20 +343,16 @@ The website is responsive, providing a seamless experience across various device
 
 Manual testing for the site involves hands-on evaluation by human testers to ensure functionality, usability, and compatibility across various devices and browsers. By conducting the manual testing procedures below, we ensure the website functions smoothly, provides an optimal user experience, and meets desired standards.
 
-- **Navigation Testing:** Manually testing the navigation menu ensured all links are working correctly and directing users to the intended pages.
-The navigation menu is responsive and displays properly on different devices and screen sizes.
-- **Subscribe Form Testing:** Testing the subscribe form ensured it functions correctly, allowing users to submit their information successfully. Validation messages were checked and ensured they appear when required fields are left blank or invalid data is entered.
+Played puzzles on various devices to ensure they function correctly and without errors. Checked that puzzle completion is accurately tracked and that the site provides appropriate feedback and rewards upon solving puzzles. Tested audio, modals, buttons and socila links to ensure all functioning efficiently.
+
+- **Navigation Testing:** Manually testing to ensure navigation is clear and intuitive, puzzle site should be functional and fun fun and consistent.
 - **Responsive Design Testing:** Testing the website on various devices (desktop, mobile, tablet) has ensured responsiveness and proper layout adaptation.
 It is verified that all content remains accessible and readable across different screen sizes.
-- **Content Hierarchy Testing:** Verified that the content hierarchy is maintained throughout the website, with clear headings, subheadings, and sections.
-Content is logically organized and easy to navigate for users.
+- **Content Hierarchy Testing:** Reviewed the arrangement of content on each page to ensure a logical flow and easy readability. Confirmed that headings, subheadings, modals and buttons text are displayed in a clear and hierarchical manner.
 - **Cross-browser Compatibility Testing:** The website has been tested on different web browsers in Browserstack (Chrome, Firefox) to ensure compatibility and consistent performance. Layout and functionality issues specific to certain browsers have been addressed accordingly.
-- **Form Submission Testing:** Subscribe form has been submitted with valid data and ensures successful submission and confirmation.
-- **Page Structure Testing:** The ayout and structure of individual pages are consistent and aligned with the design specifications.
-There are no formatting issues or discrepancies in the placement of content elements.
-- **Accessibility Testing:** The website has been tested using accessibility tools to ensure compatibility and adherence to accessibility standards.
-Proper labeling, alt text for images, and other accessibility features have been included.
-- **Performance Testing:** The website's performance has been evaluated using tools like DevTools, WC3 Validator and Lighthouse to assess factors such as page load speed, performance metrics, and optimization opportunities.
+- **Page Structure Testing:** Ensured that all pages have a consistent structure and layout. Verified that essential elements like headers, footers, and sidebars are present and correctly positioned on every page.
+- **Accessibility Testing:** Assessed the site using tools like screen readers to confirm that it is accessible to users with disabilities. Verified the presence of alt text for images, proper use of ARIA roles, and keyboard navigability.
+- **Performance Testing:** Measured the site's loading times and responsiveness under different network conditions. Ensured that pages load quickly and efficiently, optimizing any elements that cause significant delays.
 
 ## Bugs and Fixes <a name="bugs-and-fixes"></a>
 
@@ -407,7 +403,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Fix time display in modal to match game, so time displays as 00:00 | js.script | Chrome | Various | Yes | Copy timer display: add toString().padStart(2, '0') |
 | script.js:105 Uncaught ReferenceError: Cannot access 'jsConfetti' before initialization
     at puzzleSolved
-    at HTMLDivElement.<anonymous> (script.js:160:17) | js.script | Chrome | Various | Yes | Move confetti vaiable to before the puzzleSolved funcation call  |
+    at HTMLDivElement.<anonymous> (script.js:160:17) | js.script | Chrome | Various | Yes | Move confetti variable to before the puzzleSolved funcation call  |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
@@ -457,6 +453,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [Am I Responsive](https://ui.dev/amiresponsive) Generate Mock Up Image of site in a responsive manner.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools) Utilised regularly in development for code review and to test responsiveness.
 * [Browserstack](https://www.browserstack.com/) Browserstack was utilised to test browser compatility across multiple devices.
+* [NPMJS](https://www.npmjs.com/package/js-confetti) Tutorial to add confetti when puzzle is solved.
 * [Shields.io](https://shields.io/) Shields.io used to create dynamic badges for Readme.
 * [Google Fonts](https://fonts.google.com/) Import carefully selected fonts.
 * [Coolers Contrast Checker](https://coolors.co/) Ensure colour contrast inline with guidelines.
