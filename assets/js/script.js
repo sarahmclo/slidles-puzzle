@@ -225,29 +225,19 @@ function togglePlay() {
     let slideClickSound = document.getElementById("slide-click-sound");
     let volumeIcon = document.getElementById("volume-icon");
 
+    //Disable the slide sound effect when vol-off
     if (audio.paused) {
         audio.play();
         volumeIcon.src = "assets/images/vol-on.webp";
+        slideClickSound.muted = false;
     } else {
         audio.pause();
         volumeIcon.src = "assets/images/vol-off.webp";
-    }
-
-    // Mute or unmute both audios based on volume
-    if (audio.volume === 0) {
-        audio.muted = true;
         slideClickSound.muted = true;
-    } else {
-        audio.muted = false;
-
-        // Check if the volume icon is vol-off
-        if (volumeIcon.src.includes("vol-off")) {
-            slideClickSound.muted = true; // Mute the slide-click-sound
-        } else {
-            slideClickSound.muted = false;
-        }
+        slideClickSound.currentTime = 0;
     }
 }
+
 /** Info modal */
 //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
 //Get info modal
