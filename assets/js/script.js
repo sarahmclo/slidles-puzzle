@@ -88,10 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 //Display "You solved Slidles!" mesage
                 //Add setTimeout to stop alert from showing before last tile has moved
                 //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-                setTimeout(() => {
-                    const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
-                    document.getElementById("winModal").innerHTML = message;
-                }, 100);
+                //setTimeout(() => {
+                  //  const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
+                    //document.getElementById("winModal").innerHTML = message;
+                //}, 100);
+                document.getElementById("winModalTime").textContent = `${minutes}:${seconds}`;
+                document.getElementById("winModalMoves").textContent = `${moves}`;
             }
         }
     }
@@ -154,6 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //Add event listener for playButton click to shuffle tiles and start puzzle
     //Add function shuffleTilesStart for event listener - stop shuffle effecting moves counter
     playButton.addEventListener('click', function shuffleTilesAndStart() {
+        resetGame();
         shuffle();
         gameStarted = true;
 
