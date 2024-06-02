@@ -405,7 +405,10 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Add users fin time and moves to win modal | js.script | Chrome | Various | Yes |  |
 | Reuse play button in win modal to reset game | js.script | Chrome | Various | Yes |  |
 | Fix time display in modal to match game, so time displays as 00:00 | js.script | Chrome | Various | Yes | Copy timer display: add toString().padStart(2, '0') |
-
+| script.js:105 Uncaught ReferenceError: Cannot access 'jsConfetti' before initialization
+    at puzzleSolved (script.js:105:13)
+    at moveTile (script.js:98:17)
+    at HTMLDivElement.<anonymous> (script.js:160:17) | js.script | Chrome | Various | Yes |  |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.

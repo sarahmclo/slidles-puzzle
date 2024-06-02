@@ -75,10 +75,17 @@ document.addEventListener("DOMContentLoaded", function () {
             movesDisplay.textContent = moves;
 
             //Audio tile-slide click sound effect
-                var clickSound = document.getElementById("slide-click-sound");
-                clickSound.currentTime = 0; //Reset to beginning
-                clickSound.play(); //Play sound effect on click
+            var clickSound = document.getElementById("slide-click-sound");
+            clickSound.currentTime = 0; //Reset to beginning
+            clickSound.play(); //Play sound effect on click
 
+            // Confetti function adapted from tutorial https://www.npmjs.com/package/js-confetti
+            //const playButton = document.querySelector(".playButton");
+            const canvas = document.querySelector("#confetti");
+            const jsConfetti = new JSConfetti();
+            function puzzleSolved() {
+            jsConfetti.addConfetti();
+            }
 
             // Check if the puzzle is solved after each tile move
             if (isSolved()) {
@@ -94,6 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 //const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
                 //document.getElementById("winModal").innerHTML = message;
                 //}, 100);
+
+                puzzleSolved();
             }
         }
     }
