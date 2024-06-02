@@ -1,6 +1,6 @@
 # Slidles
 
-![Mock-Up]()
+![Mock-Up](docs/slidles-mockup.webp)
 
 Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, satisfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design, allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
 
@@ -466,6 +466,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [Convertio](https://convertio.co/document-converter/) Images converted to webp for optimal loading.
 * [Pixabay](https://www.pixabay.com) Audio (carl-orff-gassenhauer-hans-neusiedler-180891.mp3)and tile slide sound effect.
 * [The Noun Project](https://www.google.com/maps) Icons for info modal and volume on/off.
+* [Freesound] (https://freesound.org/people/MLaudio/sounds/615099/) Win sound effect.
 
 ## Conclusion <a name="conclusion"></a>
 Slidles merges the timeless appeal of sliding puzzles with contemporary design elements, creating a visually captivating and intellectually engaging experience. Our aim is to offer a puzzle site that not only challenges the mind but also delights the senses, making it an ideal destination for both casual players and avid puzzle enthusiasts. Through Slidles, we strive to bring the joy of puzzles to a wider audience, blending art and entertainment in perfect harmony.

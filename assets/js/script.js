@@ -83,8 +83,12 @@ document.addEventListener("DOMContentLoaded", function () {
             //const playButton = document.querySelector(".playButton");
             const canvas = document.querySelector("#confetti");
             const jsConfetti = new JSConfetti();
+            var winSound = document.getElementById("win-sound");
+            
             function puzzleSolved() {
             jsConfetti.addConfetti();
+            winSound.currentTime = 0;
+            winSound.play();
             }
 
             // Check if the puzzle is solved after each tile move
