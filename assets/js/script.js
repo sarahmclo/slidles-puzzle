@@ -84,12 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (isSolved()) {
                 //Stop timer
                 clearInterval(timerInterval);
+                document.getElementById("winModal").style.display = "block";
                 //Display "You solved Slidles!" mesage
                 //Add setTimeout to stop alert from showing before last tile has moved
                 //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
                 setTimeout(() => {
-                    const message = `Hurray! You solved Slidles! in ${minutes} minutes and ${seconds} seconds with ${moves} moves! Play Again?`;
-                    alert(message);
+                    const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
+                    document.getElementById("winModal").innerHTML = message;
                 }, 100);
             }
         }
