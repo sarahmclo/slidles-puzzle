@@ -318,7 +318,7 @@ To contribute or check the code, you can:
 ## Accessibility
 
 ### Lighthouse Testing
-![lighthouse-testing](docs/bugs/lighthouse-test-desktop.webp)
+![lighthouse-testing](docs/bugs/slidles-lighthouse-test.webp)
 
 ### Semantic HTML
 
