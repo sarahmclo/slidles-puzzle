@@ -57,10 +57,6 @@ main {
     gap: 10px;
 }
 
-.timer-moves p {
-    font-weight: 600;
-}
-
 #timer,
 #moves {
     font-family: 'Courier New', 'Courier New', Courier, monospace;
@@ -277,7 +273,7 @@ ol li {
     position: fixed;
     z-index: 1;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
@@ -316,11 +312,11 @@ ol li {
 }
 
 #confetti {
-width: 5px;
+    width: 5px;
 }
 
-.theme{
-    padding-top: 10px;
+.theme {
+    padding-top: 20px;
 }
 
 /* Footer */
@@ -336,7 +332,7 @@ width: 5px;
 /* Created by & contact */
 .created-by {
     font-size: 12px;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 10px 20px;
 }
 
 /* Disable colour on a tag when visited (for testing) */
@@ -347,23 +343,46 @@ a:active {
     color: inherit;
 }
 
-/* Media Query - Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* Media Queries */
+/* Media Query: Mobile Device*/
+@media only screen and (max-width: 600px) {
     body {
-        margin-top: 5em;
+        min-height: 100vh;
     }
 }
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+/* Media Query: Tablet Device */
+@media only screen and (min-width: 768px) {
+    body {
+        min-height: 0vh;
+        margin: 5em;
+    }
 
-    /* Info Modal */
+    .modal-content {
+        margin: 20% auto;
+    }
+
+    .win-modal-content {
+        width: 50%;
+        margin: 20% auto;
+    }
+
+    #hintImage {
+        top: 42%;
+    }
+}
+
+/* Media query: Large screens (992px and up) */
+@media screen and (min-width: 992px) {
+    body {
+        min-height: 100vh;
+        margin: 0%;
+    }
+
     .modal {
         width: 60%;
-        /* moves modal to right */
         height: 100%;
         right: 20%;
-        /* pulls modal back */
     }
 
     .modal-content {
@@ -376,6 +395,6 @@ a:active {
     }
 
     #hintImage {
-        top: 39%;
+        top: 40%;
     }
 }
