@@ -84,11 +84,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const canvas = document.querySelector("#confetti");
             const jsConfetti = new JSConfetti();
             var winSound = document.getElementById("win-sound");
-            
+
             function puzzleSolved() {
-            jsConfetti.addConfetti();
-            winSound.currentTime = 0;
-            winSound.play();
+                jsConfetti.addConfetti();
+                winSound.currentTime = 0;
+                winSound.play();
             }
 
             // Check if the puzzle is solved after each tile move
@@ -232,6 +232,12 @@ function switchImage() {
 //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
 //Assign togglePlay function to onclick event of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
 document.getElementById("volume-icon").onclick = togglePlay;
+
+window.onload = function () {
+    let slideClickSound = document.getElementById("slide-click-osund");
+    slideClickSound.muted = true;
+    slideClickSound.currentTime = 0;
+};
 
 function togglePlay() {
     let audio = document.getElementsByTagName("audio")[0]; /* 0 important here */

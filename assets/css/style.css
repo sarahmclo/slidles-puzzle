@@ -19,9 +19,7 @@ body {
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    /* min-height: 100vh;
-    justify-content: center;
-    min-width: 100vw; */
+    min-height: 100vh;
 }
 
 main {
@@ -59,10 +57,15 @@ main {
     gap: 10px;
 }
 
+.timer-moves p {
+    font-weight: 600;
+}
+
 #timer,
 #moves {
     font-family: 'Courier New', 'Courier New', Courier, monospace;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .audio-info {
@@ -312,6 +315,14 @@ ol li {
     background-color: #A8CD6E;
 }
 
+#confetti {
+width: 5px;
+}
+
+.theme{
+    padding-top: 10px;
+}
+
 /* Footer */
 /* Social networks */
 #social-networks {
@@ -319,13 +330,13 @@ ol li {
     font-size: 34px;
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 40px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 /* Created by & contact */
 .created-by {
     font-size: 12px;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 30px 20px;
 }
 
 /* Disable colour on a tag when visited (for testing) */
@@ -348,10 +359,10 @@ a:active {
 
     /* Info Modal */
     .modal {
-        width: 80%;
+        width: 60%;
         /* moves modal to right */
         height: 100%;
-        right: 10%;
+        right: 20%;
         /* pulls modal back */
     }
 
@@ -362,5 +373,9 @@ a:active {
     .win-modal-content {
         width: 30%;
         margin: 20% auto;
+    }
+
+    #hintImage {
+        top: 39%;
     }
 }
