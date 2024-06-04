@@ -179,6 +179,7 @@ ol li {
 .tile8,
 .tile9 {
     background: url(../images/pink-slidle.webp);
+    background-size: 345px 345px;
     width: 114px;
     height: 114px;
     font-size: 0px;
@@ -217,7 +218,8 @@ ol li {
 }
 
 .tile9 {
-    background: white;
+    background: none;
+    background-color: #ffffff;
     cursor: default;
     /* Blank tile 9 */
 }

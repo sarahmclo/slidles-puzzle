@@ -96,15 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 //Stop timer
                 clearInterval(timerInterval);
                 document.getElementById("winModal").style.display = "block";
-                //Display "You solved Slidles!" mesage
+                //Display "You solved Slidles!" message and link users moves and times
                 document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
                 document.getElementById("winModalMoves").textContent = `${moves}`;
-                //Add setTimeout to stop alert from showing before last tile has moved
-                //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-                //setTimeout(() => {
-                //const message = `Hurray! You solved Slidles! in ${minutes} : ${seconds}  with ${moves} moves! Play Again?`;
-                //document.getElementById("winModal").innerHTML = message;
-                //}, 100);
 
                 puzzleSolved();
             }
