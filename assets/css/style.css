@@ -330,13 +330,13 @@ width: 5px;
     font-size: 34px;
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
 }
 
 /* Created by & contact */
 .created-by {
     font-size: 12px;
-    padding: 0px 20px 30px 20px;
+    padding: 0px 20px 20px 20px;
 }
 
 /* Disable colour on a tag when visited (for testing) */
