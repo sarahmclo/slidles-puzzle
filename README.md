@@ -224,7 +224,7 @@ Counts the number of moves made, encouraging strategic thinking.
 
 - **Audio**
 Subtle sound effects enhance the interactive experience without being distracting.
-Calming audio available with off/on toggle, muted initially.
+Calming audio available with off/on toggle, muted initially. Fun win sound for optimum sense of accomplishment.
 
 - **Puzzle**
 The core feature, designed to be engaging and rewarding, with varying levels of difficulty.
@@ -235,6 +235,11 @@ A clear play button and hint Button allow for clear UX for navigating game.
 - **Modals**
 Info modal is discreet but obvious and contains relevant info on how to pplay the game.
 Hint modal gives the user an extra boost on how to solve the puzzle.
+
+- **Theme**
+A description of the puzzle and sets the tone, with a view to changing the puzzle themes weekly.
+- **Confetti**
+Added a burst of confetti on solving the puzzle to optimise user experience and give sense of accomplishment.
 
 ### Footer
 - **Social Networks**
@@ -247,9 +252,9 @@ Displaying important info on how to contact creator, with links.
 
 ### Languages
 
-- [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [**CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [**Javascript**](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+- [**CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ### Frameworks and Programs
 
@@ -282,7 +287,7 @@ GitHub Pages was used to deploy the site remotely.
 5. In the Source section, choose 'main' from the drop-down, select branch menu
 6. Select 'root' from the drop-down folder menu
 7. Click 'Save'
-8. Project now live and a link is visible at the top of the page "Your site is published at https://github.com/sarahmclo/slidles-puzzle/“ 
+8. Project now live and a link is visible at the top of the page "Your site is published at (https://github.com/sarahmclo/slidles-puzzle) 
 
 ### Local Deployment
 
@@ -405,19 +410,19 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 <details>
 <summary>Mobile<a name="mobile"></a></summary>
 
-![mobile-index](docs/mobile.png)
+![mobile-index](docs/mobile.webp)
 </details>
 
 <details>
 <summary>Desktop<a name="desktop"></a></summary>
 
-![mobile-index](docs/desktop.png)
+![mobile-index](docs/desktop.webp)
 </details>
 
 <details>
-<summary>iPad<a name="iPad"></a></summary>
+<summary>Tablet<a name="iPad"></a></summary>
 
-![ipad-index](docs/iPad.png)
+![ipad-index](docs/tablet.webp)
 </details>
 
 ## Future Features <a name="future-features"></a>
@@ -460,14 +465,14 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [Convertio](https://convertio.co/document-converter/) Images converted to webp for optimal loading.
 * [Pixabay](https://www.pixabay.com) Audio (carl-orff-gassenhauer-hans-neusiedler-180891.mp3)and tile slide sound effect.
 * [The Noun Project](https://www.google.com/maps) Icons for info modal and volume on/off.
-* [Freesound] (https://freesound.org/people/MLaudio/sounds/615099/) Win sound effect.
+* [Freesound](https://freesound.org/people/MLaudio/sounds/615099/) Win sound effect.
 
 ## Conclusion <a name="conclusion"></a>
 Slidles merges the timeless appeal of sliding puzzles with contemporary design elements, creating a visually captivating and intellectually engaging experience. Our aim is to offer a puzzle site that not only challenges the mind but also delights the senses, making it an ideal destination for both casual players and avid puzzle enthusiasts. Through Slidles, we strive to bring the joy of puzzles to a wider audience, blending art and entertainment in perfect harmony.
 
 ## Acknowledgements <a name="acknowledgements"></a>
-- Amy Richardson, my course facillitator.
 - Rahul Lakahanpal, my mentor.
+- Amy Richardson, my course facillitator.
 - CI Tutor Support and Student Care.
 - Slack community for resources and daily motivation.
 - Fellow course students for sharing.
