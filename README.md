@@ -346,14 +346,15 @@ Manual testing for the site involves hands-on evaluation by human testers to ens
 
 Played puzzles on various devices to ensure they function correctly and without errors. Checked that puzzle completion is accurately tracked and that the site provides appropriate feedback and rewards upon solving puzzles. Tested audio, modals, buttons and social links to ensure all functioning efficiently.
 
-- **Navigation Testing:** Manually testing to ensure navigation is clear and intuitive, puzzle site should be functional and fun fun and consistent.
-- **Responsive Design Testing:** Testing the website on various devices (desktop, mobile, tablet) has ensured responsiveness and proper layout adaptation.
-It is verified that all content remains accessible and readable across different screen sizes.
-- **Content Hierarchy Testing:** Reviewed the arrangement of content on each page to ensure a logical flow and easy readability. Confirmed that headings, subheadings, modals and buttons text are displayed in a clear and hierarchical manner.
-- **Cross-browser Compatibility Testing:** The website has been tested on different web browsers in Browserstack (Chrome, Firefox) to ensure compatibility and consistent performance. Layout and functionality issues specific to certain browsers have been addressed accordingly.
-- **Page Structure Testing:** Ensured that all pages have a consistent structure and layout. Verified that essential elements like headers, footers, and sidebars are present and correctly positioned on every page.
-- **Accessibility Testing:** Assessed the site using tools like screen readers to confirm that it is accessible to users with disabilities. Verified the presence of alt text for images, proper use of ARIA roles, and keyboard navigability.
-- **Performance Testing:** Measured the site's loading times and responsiveness under different network conditions. Ensured that pages load quickly and efficiently, optimizing any elements that cause significant delays.
+| Testing | Description | Browser | Device | Fixed | Responsive |
+|-------------|-----------------------|---------|--------|----------|----------|
+| **Navigation Testing:** | Manually testing to ensure navigation is clear and intuitive, puzzle site should be functional and fun fun and consistent. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes |
+| **Responsive Design Testing:** | Testing the website on various devices (desktop, mobile, tablet) has ensured responsiveness and proper layout adaptation. It is verified that all content remains accessible and readable across different screen sizes. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes |
+| **Content Hierarchy Testing:** | Reviewed the arrangement of content on each page to ensure a logical flow and easy readability. Confirmed that headings, subheadings, modals and buttons text are displayed in a clear and hierarchical manner. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes |
+| **Cross-browser Compatibility Testing:** | The website has been tested on different web browsers in Browserstack (Chrome, Firefox) to ensure compatibility and consistent performance. Layout and functionality issues specific to certain browsers have been addressed accordingly. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes |
+| **Page Structure Testing:** | Ensured that all pages have a consistent structure and layout. Verified that essential elements like headers, footers, and sidebars are present and correctly positioned on every page. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes |
+| **Accessibility Testing:** | Assessed the site using tools like screen readers to confirm that it is accessible to users with disabilities. Verified the presence of alt text for images, proper use of ARIA roles, and keyboard navigability. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes |
+| **Performance Testing:** | Measured the site's loading times and responsiveness under different network conditions. Ensured that pages load quickly and efficiently, optimizing any elements that cause significant delays. | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Yes | 
 
 ## Bugs and Fixes <a name="bugs-and-fixes"></a>
 
@@ -362,49 +363,41 @@ Throughout the development process, we encountered and resolved various bugs to 
 - ### Mark-up Validation Testing Bugs ###
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
-| Timer-moves-audio-info-container: get all on one line| Main content index.html | Chrome | MacBook | Yes | Use flexbox to and gap to space correctly  |
-| Audio - sound effect bug - not playing fast enough | Main content index.html | Chrome | Various | Yes | update to new trimmed audio and add preload:auto; to html |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
-| Audio - stops after one play | Main content index.html | Chrome | MacBook | Yes | Use loop |
+| Timer-moves-audio-info-container: get all on one line| Main content index.html | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Use flexbox to and gap to space correctly  |
+| Audio - sound effect bug - not playing fast enough | Main content index.html | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Update to new trimmed audio and add preload:auto; to html |
+| Audio - stops after one play | Main content index.html | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use loop |
 
 - ### CSS Validation Testing Bugs ###
 
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
-| Moves & timer move around whilst incrementing| css/js.script | Chrome | Various | Yes | use monospace font |
+| Moves & timer move around whilst incrementing| css/js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use monospace font |
 
 - ### Javascript Validation Testing Bugs ###
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
-| audio on-click| js.script | Chrome | Various | Yes | use on-click toggle |
-| js hint says variable togglePlay not in use| js.script | Chrome |Various | Yes | assign togglePlay in javascript not html - adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link |
-| Puzzle grid | html/js.script | Chrome | Various | Yes | use background url and css grid https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout|
-| Puzzle-container make gaps in grid to section tiles| css | Chrome | Various | Yes | usee css display: grid and style grid-gap |
-| puzzle image not showing| css | Chrome | Various | Yes | change cell ids to represent columns 1,2,3 and row1,2,3 |
-| Puzzle image not lining up| css | Chrome | MacBook | Yes | Update tile dimensions true to size of image, essential that width and height exact for image to display in correct aspect ratio and image shown completely |
-| tile borders | css | Chrome | Various | Yes | amend border to surrounding container rather than each individual tile |
-| Shuffle tiles when playButton clicked | js.script | Chrome | Various | Yes | use tile direction array, shuffle() function and math.floor https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random |
-| playButton and tiles not working| js.script | Chrome | Various | Yes | document.getElementByquerySelector("playButton") incorrect id remove getElementBy and declare gameStarted variable|
-| Shuffle function incorrect | js.script | Chrome | Various | Yes | add parentheses |
-| playButton not working| js.script | Chrome | Various | Yes | Event Listener incorrect|
-| playButton not shuffling| html/js.script | Chrome | Various | Yes | add onClick="shuffle"() in html |
-| playButton not shuffling| js.script | Chrome | Various | Yes | remove stray comma that was within code |
-| After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome | Various | Yes | Add function and event listener to play button which allows playButton to only shuffle at start of game |
-| Close hint modal bug | html/css/js.script | Chrome | Various | Yes | no "." in event.target |
-| Alert occurs when page is loaded as puzzle is solved | js.script | Chrome | Various | Yes | so remove issolved from reset game |
-| Alert occurs before last tile has moves | js.script | Chrome | Various | Yes | Add setTimeout to stop alert from showing before last tile has moved https://developer.mozilla.org/en-US/docs/Web/API/setTimeout |
-| Remove numbers display on tiles | js.script | Chrome | Various | Yes | Use font-size 0 |
-| Change initial win aert to a modal and link play button | js.script | Chrome | Various | Yes |  |
-| Add users fin time and moves to win modal | js.script | Chrome | Various | Yes |  |
-| Reuse play button in win modal to reset game | js.script | Chrome | Various | Yes |  |
-| Fix time display in modal to match game, so time displays as 00:00 | js.script | Chrome | Various | Yes | Copy timer display: add toString().padStart(2, '0') |
-| script.js:105 Uncaught ReferenceError: Cannot access 'jsConfetti' before initialization
-    at puzzleSolved
-    at HTMLDivElement.<anonymous> (script.js:160:17) | js.script | Chrome | Various | Yes | Move confetti variable to before the puzzleSolved funcation call  |
+| audio on-click| js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use on-click toggle |
+| js hint says variable togglePlay not in use| js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Assign togglePlay in javascript not html - adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link |
+| Puzzle grid | html/js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use background url and css grid https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout|
+| Puzzle-container make gaps in grid to section tiles| css | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use css display: grid and style grid-gap |
+| puzzle image not showing| css | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Change cell ids to represent columns 1,2,3 and row1,2,3 |
+| Puzzle image not lining up| css | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Update tile dimensions true to size of image, essential that width and height exact for image to display in correct aspect ratio and image shown completely |
+| tile borders | css | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Amend border to surrounding container rather than each individual tile |
+| Shuffle tiles when playButton clicked | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use tile direction array, shuffle() function and math.floor https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random |
+| playButton and tiles not working| js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use document.getElementByquerySelector("playButton") incorrect id remove getElementBy and declare gameStarted variable|
+| Shuffle function incorrect | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Add parentheses |
+| playButton not working| js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Event Listener incorrect - amend |
+| playButton not shuffling| html/js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Add onClick="shuffle"() in html |
+| playButton not shuffling| js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Remove stray comma that was within code |
+| After game has commenced playButton effects timer and moves - timer is speeding up and extra moves added when clicked - should just shuffle tiles only | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Add function and event listener to play button which allows playButton to only shuffle at start of game |
+| Close hint modal bug | html/css/js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | no "." in event.target |
+| Alert occurs when page is loaded as puzzle is solved | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Remove isSolved from reset game |
+| Alert occurs before last tile has moves | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Add setTimeout to stop alert from showing before last tile has moved https://developer.mozilla.org/en-US/docs/Web/API/setTimeout |
+| Remove numbers display on tiles | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use font-size 0 |
+| Change initial win alert to a modal and link play button | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Make new play again modal, insert play button |
+| Add users fin time and moves to win modal | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use .textcontent and template literal  |
+| Fix time display in modal to match game, so time displays as 00:00 | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Copy timer display: add toString().padStart |
+| Uncaught ReferenceError: Cannot access 'jsConfetti' before initialization at puzzleSolved | js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Move confetti variable to before the puzzleSolved funcation call  |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
