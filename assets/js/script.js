@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let seconds = 0;
     let minutes = 0;
     let gameStarted = false;
-    
+
     // Index tutorial https://www.w3schools.com/jsref/jsref_indexof_array.asp
     //Define two variables, blankTileRow and blankTileCol representing the row and column indices of a blank tile in a puzzle. These indices are 0-based, meaning the top-left tile is at index (0,0) and the bottom-right tile is at index (rows - 1, columns - 1).
     let blankTileRow = 2; //Row index of blank tile (based on 0)
@@ -204,18 +204,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Switch puzzles
-let images = [
-    "url('assets/images/pink-slidle.webp')",
-    "url('assets/images/black-slidle.webp')",
-    "url('assets/images/yellow-slidle.webp')",
-    "url('assets/images/white-slidle.webp')"
-];
-
-let currentImageIndex = 0;
-
 function switchImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through images
+    let images = [
+        "url('assets/images/pink-slidle.webp')",
+        "url('assets/images/black-slidle.webp')",
+        "url('assets/images/yellow-slidle.webp')",
+        "url('assets/images/white-slidle.webp')"
+    ];
 
+    const currentImage = tiles[0].style.backgroundImage;
+    const newImage = currentImage.includes('pink-slidle.webp') ? images[1] : images[0];
+    tiles.forEach(tile => {
+
+        tile.style.backgroundImage = `url(${newImage})`;
+
+    });
+
+    let currentImageIndex = 0;
     let tiles = document.querySelectorAll(".tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9");
 
     tiles.forEach((tile, index) => {
@@ -233,28 +239,47 @@ function switchImage() {
 //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
 //Assign togglePlay function to onclick events of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
 function togglePlay() {
-    let audio = document.getElementsByTagName("audio")[0]; /* 0 important here */
+    let modal = document.getElementById("audioModal");
+    modal.style.display = "block";
+}
+
+function applySettings() {
+    let music = document.getElementById("music");
     let slideClickSound = document.getElementById("slide-click-sound");
     let winSound = document.getElementById("win-sound");
-    let volumeIcon = document.getElementById("volume-icon");
 
-    //Disable the slide sound and win sound effect when vol-off
-    if (audio.paused) {
-        audio.play();
-        volumeIcon.src = "assets/images/vol-on.webp";
-        slideClickSound.muted = false;
-        winSound.muted = false;
+    let musicToggle = document.getElementById("music-toggle").checked;
+    let sfxToggle = document.getElementById("sfx-toggle").checked;
+
+    if (musicToggle) {
+        music.play();
+        document.getElementById("volume-icon").src = "assets/images/vol-on.webp";
     } else {
-        audio.pause();
-        volumeIcon.src = "assets/images/vol-off.webp";
-        slideClickSound.muted = true;
-        slideClickSound.currentTime = 0;
-        winSound.muted = true;
-        winSound.currentTime = 0;
+        music.pause();
+        music.currentTime = 0;
+        document.getElementById("volume-icon").src = "assets/images/vol-off.webp";
     }
+
+    slideClickSound.muted = !sfxToggle;
+    winSound.muted = !sfxToggle;
+
+    //Hide after applying
+    document.getElementById("audioModal").style.display = "none";
 }
 
 window.onload = function () {
+    let modal = document.getElementById("musicModal");
+    let span = document.getElementsByClassName("close")[0];
+    let applyBtn = document.getElementById("apply");
+
+    document.getElementById("volume-icon").onclick = togglePlay;
+    applyBtn.onclick = applySettings;
+
+    // Close modal on x
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+
     let slideClickSound = document.getElementById("slide-click-sound");
     slideClickSound.muted = true;
     slideClickSound.currentTime = 0;

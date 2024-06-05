@@ -75,6 +75,12 @@ main {
     cursor: pointer;
 }
 
+#sfx-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
 /* Info Modal Styles */
 #info-modal {
     /* Icon */
@@ -131,6 +137,29 @@ main {
     cursor: pointer;
 }
 
+/* Audio modal */
+#audioModal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #252525;
+}
+
+.audio-modal-content {
+    background-color: #fefefe;
+    margin: 32% auto;
+    /* from top and centered */
+    padding: 20px;
+    border: 1px solid #252525;
+    border-radius: 10px;
+    width: 75%;
+}
+
 .how-to-play,
 h4 {
     padding: 10px;
@@ -154,7 +183,7 @@ ol li {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Makes 3 equal columns in backgroound url */
+    /* Makes 3 equal columns in background url */
     grid-gap: 2px;
     /* Gaps in image to form tiles */
     border: 1px solid #3f3f42;
@@ -163,7 +192,7 @@ ol li {
 
 .tile {
     width: 100%;
-    /*This makes tile occupy full with in grid cell */
+    /*This makes tile occupy full width in grid cell */
     height: 0;
     cursor: pointer;
 }
@@ -177,7 +206,7 @@ ol li {
 .tile7,
 .tile8,
 .tile9 {
-    background: url(../images/pink-slidle.webp);
+    background: url("../images/pink-slidle.webp");
     background-size: 345px 345px;
     width: 114px;
     height: 114px;
@@ -388,7 +417,7 @@ a:active {
         margin: 13% auto;
     }
 
-    .win-modal-content {
+    .win-modal-content, .audio-modal-content {
         width: 30%;
         margin: 20% auto;
     }
