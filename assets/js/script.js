@@ -181,9 +181,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     });
 
-    switchButton.addEventListener('click', function shuffleTilesAndStart() {
-        resetGame();
-    });
+    //switchButton.addEventListener('click', function shuffleTilesAndStart() {
+    //  resetGame();
+    //});
 
     //Function to get direction of tile move
     function getDirection(row, col) {
@@ -200,128 +200,103 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Reset puzzle when page loads
     resetGame();
-});
 
-//Switch puzzles
-function switchImage() {
-    resetGame();
-    currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through images
-    let images = [
+    //Switch puzzles
+    const images = [
         "url('assets/images/pink-slidle.webp')",
         "url('assets/images/black-slidle.webp')",
         "url('assets/images/yellow-slidle.webp')",
         "url('assets/images/white-slidle.webp')"
     ];
 
-    const currentImage = tiles[0].style.backgroundImage;
-    const newImage = currentImage.includes('pink-slidle.webp') ? images[1] : images[0];
-    tiles.forEach(tile => {
+    /** Audio */
+    //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
+    //Assign togglePlay function to onclick events of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
+    function togglePlay() {
+        let modal = document.getElementById("audioModal");
+        modal.style.display = "block";
+    }
 
-        tile.style.backgroundImage = `url(${newImage})`;
+    function applySettings() {
+        let music = document.getElementById("music");
+        let slideClickSound = document.getElementById("slide-click-sound");
+        let winSound = document.getElementById("win-sound");
 
-    });
+        let musicToggle = document.getElementById("music-toggle").checked;
+        let sfxToggle = document.getElementById("sfx-toggle").checked;
 
-    let currentImageIndex = 0;
-    let tiles = document.querySelectorAll(".tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9");
-
-    tiles.forEach((tile, index) => {
-        if (tile.classList.contains("tile9")) {
-            // Ensure the blank tile has a white background
-            tile.style.backgroundImage = "none";
-            tile.style.backgroundColor = "white";
+        if (musicToggle) {
+            music.play();
+            document.getElementById("volume-icon").src = "assets/images/vol-on.webp";
         } else {
-            tile.style.backgroundImage = images[currentImageIndex];
+            music.pause();
+            music.currentTime = 0;
+            document.getElementById("volume-icon").src = "assets/images/vol-off.webp";
+        }
+
+        slideClickSound.muted = !sfxToggle;
+        winSound.muted = !sfxToggle;
+
+        //Hide after applying
+        document.getElementById("audioModal").style.display = "none";
+    }
+
+    window.onload = function () {
+        let modal = document.getElementById("musicModal");
+        let applyBtn = document.getElementById("applyButton");
+
+        document.getElementById("volume-icon").onclick = togglePlay;
+        applyBtn.onclick = applySettings;
+
+        let slideClickSound = document.getElementById("slide-click-sound");
+        slideClickSound.muted = true;
+        slideClickSound.currentTime = 0;
+
+        let winSound = document.getElementById("win-sound");
+        winSound.muted = true;
+        winSound.currentTime = 0;
+
+        document.getElementById("volume-icon").onclick = togglePlay;
+    };
+
+    /** Info modal */
+    //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
+    //Get info modal
+    let modal = document.getElementById("myModal");
+    //Get icon that opens modal
+    let img = document.getElementById("info-modal");
+    //Get element that closes modal
+    let span = document.getElementsByClassName("close")[0];
+    console.log(close - modal);
+    //When user clicks on icon, open modal
+    img.onclick = function () {
+        modal.style.display = "block";
+    };
+    //When user clickson x, close modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    /** Hint modal */
+    //Get hint button 
+    let hintButton = document.querySelector(".hintButton");
+    //Get hint modal element
+    let hintModal = document.getElementById("hintModal");
+    //Add click event listener to hint button
+    hintButton.addEventListener("click", function () {
+        //Display hint modal
+        hintModal.style.display = "block";
+    });
+    //Close modal
+    hintModal.addEventListener("click", function (event) {
+        if (event.target === hintModal || event.target.tagName === 'IMG') {
+            hintModal.style.display = "none";
         }
     });
-}
-
-/** Audio */
-//Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
-//Assign togglePlay function to onclick events of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
-function togglePlay() {
-    let modal = document.getElementById("audioModal");
-    modal.style.display = "block";
-}
-
-function applySettings() {
-    let music = document.getElementById("music");
-    let slideClickSound = document.getElementById("slide-click-sound");
-    let winSound = document.getElementById("win-sound");
-
-    let musicToggle = document.getElementById("music-toggle").checked;
-    let sfxToggle = document.getElementById("sfx-toggle").checked;
-
-    if (musicToggle) {
-        music.play();
-        document.getElementById("volume-icon").src = "assets/images/vol-on.webp";
-    } else {
-        music.pause();
-        music.currentTime = 0;
-        document.getElementById("volume-icon").src = "assets/images/vol-off.webp";
-    }
-
-    slideClickSound.muted = !sfxToggle;
-    winSound.muted = !sfxToggle;
-
-    //Hide after applying
-    document.getElementById("audioModal").style.display = "none";
-}
-
-window.onload = function () {
-    let modal = document.getElementById("musicModal");
-    let applyBtn = document.getElementById("applyButton");
-
-    document.getElementById("volume-icon").onclick = togglePlay;
-    applyBtn.onclick = applySettings;
-
-    let slideClickSound = document.getElementById("slide-click-sound");
-    slideClickSound.muted = true;
-    slideClickSound.currentTime = 0;
-
-    let winSound = document.getElementById("win-sound");
-    winSound.muted = true;
-    winSound.currentTime = 0;
-
-    document.getElementById("volume-icon").onclick = togglePlay;
-};
-
-/** Info modal */
-//Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
-//Get info modal
-let modal = document.getElementById("myModal");
-//Get icon that opens modal
-let img = document.getElementById("info-modal");
-//Get element that closes modal
-let span = document.getElementsByClassName("close")[0];
-console.log(close - modal);
-//When user clicks on icon, open modal
-img.onclick = function () {
-    modal.style.display = "block";
-};
-//When user clickson x, close modal
-span.onclick = function () {
-    modal.style.display = "none";
-};
-
-/** Hint modal */
-//Get hint button 
-let hintButton = document.querySelector(".hintButton");
-//Get hint modal element
-let hintModal = document.getElementById("hintModal");
-//Add click event listener to hint button
-hintButton.addEventListener("click", function () {
-    //Display hint modal
-    hintModal.style.display = "block";
-});
-//Close modal
-hintModal.addEventListener("click", function (event) {
-    if (event.target === hintModal || event.target.tagName === 'IMG') {
-        hintModal.style.display = "none";
-    }
-});
-//Close hint modal when click anywhere on modal (enhances UX)
-window.addEventListener("click", function (event) {
-    if (event.target === hintModal) {
-        hintModal.style.display = "none";
-    }
+    //Close hint modal when click anywhere on modal (enhances UX)
+    window.addEventListener("click", function (event) {
+        if (event.target === hintModal) {
+            hintModal.style.display = "none";
+        }
+    });
 });
