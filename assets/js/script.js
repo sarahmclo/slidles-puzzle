@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     //Get elements
     const playButton = document.querySelector(".playButton");
+    const switchButton = document.querySelector(".switchButton");
     const tiles = document.querySelectorAll(".tile");
     const timerDisplay = document.getElementById('timer');
     const movesDisplay = document.getElementById('moves');
@@ -82,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
             clickSound.play(); //Play sound effect on click
 
             // Confetti function adapted from tutorial https://www.npmjs.com/package/js-confetti
-            //const playButton = document.querySelector(".playButton");
             const canvas = document.querySelector("#confetti");
             const jsConfetti = new JSConfetti();
             var winSound = document.getElementById("win-sound");
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Add event listener for playButton click to shuffle tiles and start puzzle
     //Add function shuffleTilesStart for event listener - stop shuffle effecting moves counter
-    playButton.addEventListener('click', function shuffleTilesAndStart() {
+    playButton.addEventListener('click', function () {
         resetGame();
         shuffle();
         gameStarted = true;
@@ -204,6 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Switch puzzles
 function switchImage() {
+    resetGame();
     currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through images
     let images = [
         "url('assets/images/pink-slidle.webp')",
@@ -292,7 +293,7 @@ let modal = document.getElementById("myModal");
 let img = document.getElementById("info-modal");
 //Get element that closes modal
 let span = document.getElementsByClassName("close")[0];
-console.log(close-modal);
+console.log(close - modal);
 //When user clicks on icon, open modal
 img.onclick = function () {
     modal.style.display = "block";
