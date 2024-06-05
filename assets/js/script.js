@@ -269,8 +269,7 @@ function applySettings() {
 
 window.onload = function () {
     let modal = document.getElementById("musicModal");
-    let span = document.getElementsByClassName("close")[0];
-    let applyBtn = document.getElementById("apply");
+    let applyBtn = document.getElementById("applyButton");
 
     document.getElementById("volume-icon").onclick = togglePlay;
     applyBtn.onclick = applySettings;
