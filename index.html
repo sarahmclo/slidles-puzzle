@@ -45,10 +45,10 @@
                     <img id="volume-icon" src="assets/images/vol-off.webp" alt="volume toggle">
                     <audio id="music" src="assets/audio/carl-orff-gassenhauer-hans-neusiedler-180891.mp3" loop></audio>
                     <!-- Tile sound effect -->
-                    <audio id="slide-click-sound" src="assets/audio/slide-click.mp3" preload="auto" autoplay></audio>
+                    <audio id="slide-click-sound" src="assets/audio/slide-click.mp3" preload="auto" autoplay onload="this.play()"></audio>
                     <!-- Win sound effect -->
                     <audio id="win-sound" src="assets/audio/615099__mlaudio__magic_game_win_success.wav"
-                        preload="auto"></audio>
+                        preload="auto" autoplay onload="this.play()"></audio>
                 </div>
                 <!-- Info modal -->
                 <img id="info-modal" src="assets/images/info-icon.webp" alt="information modal trigger on how to play"

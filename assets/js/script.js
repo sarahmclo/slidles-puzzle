@@ -2,10 +2,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     //Get elements
     const playButton = document.querySelector(".playButton");
-    const switchButton = document.querySelector(".switchButton");
+    //const switchButton = document.querySelector(".switchButton");
     const tiles = document.querySelectorAll(".tile");
     const timerDisplay = document.getElementById('timer');
     const movesDisplay = document.getElementById('moves');
+    const audio = document.getElementById('slide-click-sound');
 
     //Puzzle Variables - blank tile position
     let moves = 0; //Start counter at 0
@@ -239,6 +240,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //Hide after applying
         document.getElementById("audioModal").style.display = "none";
+
+        audio.addEventListener('load', function() {
+            audio.play();
+        });
     }
 
     window.onload = function () {
