@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //Stop timer
                 clearInterval(timerInterval);
                 document.getElementById("winModal").style.display = "block";
-                //Display "You solved Slidles!" message and link users moves and times
+                //Display "You solved Slidles!" message and link users moves and time
                 document.getElementById("winModalTime").textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
                 document.getElementById("winModalMoves").textContent = `${moves}`;
 
