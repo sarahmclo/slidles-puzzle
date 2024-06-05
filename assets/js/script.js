@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     //Get elements
     const playButton = document.querySelector(".playButton");
-    const switchButton = document.querySelector(".switchButton");
     const tiles = document.querySelectorAll(".tile");
     const timerDisplay = document.getElementById('timer');
     const movesDisplay = document.getElementById('moves');
@@ -274,11 +273,6 @@ window.onload = function () {
     document.getElementById("volume-icon").onclick = togglePlay;
     applyBtn.onclick = applySettings;
 
-    // Close modal on x
-    span.onclick = function () {
-        modal.style.display = "none";
-    };
-
     let slideClickSound = document.getElementById("slide-click-sound");
     slideClickSound.muted = true;
     slideClickSound.currentTime = 0;
@@ -298,6 +292,7 @@ let modal = document.getElementById("myModal");
 let img = document.getElementById("info-modal");
 //Get element that closes modal
 let span = document.getElementsByClassName("close")[0];
+console.log(close-modal);
 //When user clicks on icon, open modal
 img.onclick = function () {
     modal.style.display = "block";
