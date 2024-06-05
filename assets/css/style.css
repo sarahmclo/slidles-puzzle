@@ -149,6 +149,9 @@ main {
     padding: 20px;
     border-radius: 10px;
     width: 75%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 #audioModal #applyButton {
@@ -157,12 +160,6 @@ main {
 
 #audioModal #applyButton:hover {
     background-color: #A8CD6E;
-}
-
-.audio-modal-content {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
 }
 
 /* Style checkbox https://sentry.io/answers/how-to-style-a-checkbox-using-css/ */
@@ -341,7 +338,7 @@ ol li {
     /* from top and centered */
     padding: 20px;
     border-radius: 10px;
-    width: 75%;
+    width: 50%;
 }
 
 #winModal .playButton-container {
@@ -408,9 +405,10 @@ a:active {
         margin: 20% auto;
     }
 
-    .win-modal-content {
-        width: 50%;
-        margin: 20% auto;
+    .win-modal-content,
+    .audio-modal-content {
+        width: 30%;
+        margin: 10% auto;
     }
 
     #hintImage {
@@ -438,7 +436,7 @@ a:active {
     .win-modal-content,
     .audio-modal-content {
         width: 25%;
-        margin: 20% auto;
+        margin: 10% auto;
     }
 
     #hintImage {

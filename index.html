@@ -101,7 +101,7 @@
             </div>
             <div class="hintButton-container">
                 <button class="hintButton">Hint</button>
-                <button class="switchButton" onclick="switchImage();">Switch</button>
+                <button class="switchButton">Reset</button>
             </div>
         </div>
 
@@ -116,7 +116,7 @@
                     <label for="music-toggle">Music</label>
                     <input type="checkbox" id="music-toggle">
                 </div>
-                <button id="applyButton">Apply</button>
+                <button id="applyButton">Resume</button>
             </div>
         </div>
 
@@ -132,8 +132,8 @@
             <div class="win-modal-content">
                 <h4>You solved Slidles!</h4>
                 <div class="win-time-moves">
-                    <span id="winModalTime"></span>
-                    <h4>Moves: </h4><span id="winModalMoves"></span>
+                    <h4>Time:</h4><span id="winModalTime"></span>
+                    <h4>Moves:</h4><span id="winModalMoves"></span>
                     <div class="playButton-container">
                         <button class="playButton"
                             onclick="document.getElementById('winModal').style.display='none'; resetGame();">Play

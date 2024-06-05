@@ -237,6 +237,11 @@ Info modal is discreet but obvious and contains relevant info on how to play the
 
 <img src="docs/features/modal.webp" alt="info-modal" width="500">
 
+- **Audio Modal**
+Introduced an audio modal, user can choose betwee, music, sfx, both or none, designed for UX best practices in mind.
+
+<img src="docs/features/audio-modal.webp" alt="audio-modal" width="500">
+
 - **Hint Modal**
 Hint modal gives the user an extra boost on how to solve the puzzle.
 
