@@ -47,7 +47,8 @@ Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged wi
 8. [Finished Product](#finished-product)
 9. [Future Features](#future-features)
 10. [Credits](#credits)
-    - [Content and Code](#content-and-code)
+    - [Content](#content)
+    - [Code](#content)
     - [Media](#media)
 11. [Conclusion](#conclusion)
 12. [Acknowledgements](#acknowledgements)
@@ -433,13 +434,13 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 
 ## Credits <a name="credits"></a>
 
-### Content and Code
+### Content
 
 * Puzzle, text and imagery all original creations.
 * [Code-Institute](https://codeinstitute.net/ie/?nab=0) Walkthrough projects content.
 * [MDN](https://developer.mozilla.org/en-US/) Web docs and tutorials.
 * [StackOverflow](https://stackoverflow.com/) Troubleshooting code.
-* [W3Schools](https://www.w3schools.com/) Javascript intro tutorials for audio and sound effects.
+* [W3Schools](https://www.w3schools.com/) Javascript intro tutorials
 * [CSS Tricks - HTML Picture](https://css-tricks.com) Further CSS tutorials.
 * [Web Dev](https://web.dev.com) Tutorials in javascript and responsivity.
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) Flexbox tutorials.
@@ -459,14 +460,27 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [Coolers Contrast Checker](https://coolors.co/) Ensure colour contrast inline with guidelines.
 * [Adobe Colors](https://color.adobe.com/) Generate pleasing colour palette in keeping with logo and overall design.
 
+### Code - Tutorials and adapted code sources
+* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) CSS Grid Layout explaining the grid structure thoroughly in HTML & CSS.
+* [NPMJS](https://www.npmjs.com/package/js-confetti) Confetti effect on win - adapted from tutorial to use canvas on win not on button.
+* [DEV](https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e) Add simple audio tutorial.
+* [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Cell) Grid styling and cells - use one image and create cells rather than importing multiple images.
+* [Stackoverflow](https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows) Adapt code shuffle tiles tiles. 
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) Using math random for tile diections, positions and moves.
+* [Stackoverflow](https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause) Audio toggle on/off for enhanced UX.
+* [Stackoverflow](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link) Play and pause audio using icon.
+* [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) Use modals instead of alert for info and win, optimises user navigation and experience.
+* [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) Flexbox tutorials.
+
 ### Media
 * [Adobe Illustrator](https://www.adobe.com/) All original imagery created in Adobe Illustrator.
 * [FontAwesome](https://fontawesome.com/) Icons for social networks.
 * [Favicon](https://favicon.io/) Created my own favicon from logo.
 * [Convertio](https://convertio.co/document-converter/) Images converted to webp for optimal loading.
-* [Pixabay](https://www.pixabay.com) Audio (carl-orff-gassenhauer-hans-neusiedler-180891.mp3)and tile slide sound effect.
+* [Pixabay](https://www.pixabay.com) Audio (carl-orff-gassenhauer-hans-neusiedler-180891.mp3) and tile slide sound effect.
 * [The Noun Project](https://www.google.com/maps) Icons for info modal and volume on/off.
 * [Freesound](https://freesound.org/people/MLaudio/sounds/615099/) Win sound effect.
+* [NPMJS](https://www.npmjs.com/package/js-confetti) Confetti effect on win.
 
 ## Conclusion <a name="conclusion"></a>
 Slidles merges the timeless appeal of sliding puzzles with contemporary design elements, creating a visually captivating and intellectually engaging experience. Our aim is to offer a puzzle site that not only challenges the mind but also delights the senses, making it an ideal destination for both casual players and avid puzzle enthusiasts. Through Slidles, we strive to bring the joy of puzzles to a wider audience, blending art and entertainment in perfect harmony.

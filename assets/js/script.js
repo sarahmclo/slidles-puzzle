@@ -277,7 +277,6 @@ span.onclick = function () {
 };
 
 /** Hint modal */
-//Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
 //Get hint button 
 let hintButton = document.querySelector(".hintButton");
 //Get hint modal element
