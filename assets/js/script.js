@@ -224,32 +224,40 @@ function switchImage() {
 
 /** Audio */
 //Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
-//Assign togglePlay function to onclick event of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
-document.getElementById("volume-icon").onclick = togglePlay;
-
-window.onload = function () {
-    let slideClickSound = document.getElementById("slide-click-sound");
-    slideClickSound.muted = true;
-    slideClickSound.currentTime = 0;
-};
-
+//Assign togglePlay function to onclick events of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
 function togglePlay() {
     let audio = document.getElementsByTagName("audio")[0]; /* 0 important here */
     let slideClickSound = document.getElementById("slide-click-sound");
+    let winSound = document.getElementById("win-sound");
     let volumeIcon = document.getElementById("volume-icon");
 
-    //Disable the slide sound effect when vol-off
+    //Disable the slide sound and win sound effect when vol-off
     if (audio.paused) {
         audio.play();
         volumeIcon.src = "assets/images/vol-on.webp";
         slideClickSound.muted = false;
+        winSound.muted = false;
     } else {
         audio.pause();
         volumeIcon.src = "assets/images/vol-off.webp";
         slideClickSound.muted = true;
         slideClickSound.currentTime = 0;
+        winSound.muted = true;
+        winSound.currentTime = 0;
     }
 }
+
+window.onload = function () {
+    let slideClickSound = document.getElementById("slide-click-sound");
+    slideClickSound.muted = true;
+    slideClickSound.currentTime = 0;
+
+    let winSound = document.getElementById("win-sound");
+    winSound.muted = true;
+    winSound.currentTime = 0;
+
+    document.getElementById("volume-icon").onclick = togglePlay;
+};
 
 /** Info modal */
 //Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
