@@ -224,8 +224,7 @@ Tracks the time taken to solve each puzzle, adding an element of challenge.
 Counts the number of moves made, encouraging strategic thinking.
 
 - **Audio**
-Subtle sound effects enhance the interactive experience without being distracting.
-Calming audio available with off/on toggle, muted initially. Fun win sound for optimum sense of accomplishment.
+Subtle tile sound effects and calming music enhance the interactive experience without being distracting and using off/on toggle for optimal UX. Fun win sound when puzzle is solved for optimum sense of accomplishment.
 
 - **Puzzle**
 The core feature, designed to be engaging and rewarding, with varying levels of difficulty.
@@ -233,14 +232,28 @@ The core feature, designed to be engaging and rewarding, with varying levels of 
 - **Buttons**
 A clear play button and hint Button allow for clear UX for navigating game.
 
-- **Modals**
-Info modal is discreet but obvious and contains relevant info on how to pplay the game.
+- **Info Modal**
+Info modal is discreet but obvious and contains relevant info on how to play the game.
+
+<img src="docs/features/modal.webp" alt="info-modal" width="500">
+
+- **Hint Modal**
 Hint modal gives the user an extra boost on how to solve the puzzle.
+
+<img src="docs/features/hint.webp" alt="hint-modal" width="500">
+
+- **Win Modal**
+Win modal alerts the user to the puzzle being completed.
+
+<img src="docs/features/win-modal.webp" alt="info-modal" width="500">
 
 - **Theme**
 A description of the puzzle and sets the tone, with a view to changing the puzzle themes weekly.
+
 - **Confetti**
 Added a burst of confetti on solving the puzzle to optimise user experience and give sense of accomplishment.
+
+<img src="docs/features/confetti.webp" alt="confetti" width="500">
 
 ### Footer
 - **Social Networks**
