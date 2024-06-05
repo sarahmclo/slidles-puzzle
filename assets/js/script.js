@@ -2,20 +2,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     //Get elements
     const playButton = document.querySelector(".playButton");
+    const switchButton = document.querySelector(".switchButton");
     const tiles = document.querySelectorAll(".tile");
     const timerDisplay = document.getElementById('timer');
     const movesDisplay = document.getElementById('moves');
 
     //Puzzle Variables - blank tile position
-    //Define two variables, blankTileRow and blankTileCol, which represent the row and column indices of a blank tile in a puzzle. These indices are 0-based, meaning the top-left tile is at index (0,0) and the bottom-right tile is at index (rows - 1, columns - 1).
-    //Therefore the blank tile is located at row 2 and column 2, which means it is the third row and the third column from the top-left corner of the puzzle.
-    let blankTileRow = 2; //Row index of blank tile (based on 0)
-    let blankTileCol = 2; //Columnindex of blank tile (based on 0)
     let moves = 0; //Start counter at 0
     let timerInterval;
     let seconds = 0;
     let minutes = 0;
     let gameStarted = false;
+    
+    // Index tutorial https://www.w3schools.com/jsref/jsref_indexof_array.asp
+    //Define two variables, blankTileRow and blankTileCol representing the row and column indices of a blank tile in a puzzle. These indices are 0-based, meaning the top-left tile is at index (0,0) and the bottom-right tile is at index (rows - 1, columns - 1).
+    let blankTileRow = 2; //Row index of blank tile (based on 0)
+    let blankTileCol = 2; //Column index of blank tile (based on 0)
+    //Blank tile is located at row 2 and column 2, which means it is the third row and the third column from the top-left corner of the puzzle.
 
     //Add solution
     const solution = ["1", "2", "3", "4", "5", "6", "7", "8", ""];
@@ -177,6 +180,10 @@ document.addEventListener("DOMContentLoaded", function () {
             //Minutes and seconds - stack overflow
             timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         }, 1000);
+    });
+
+    switchButton.addEventListener('click', function shuffleTilesAndStart() {
+        resetGame();
     });
 
     //Function to get direction of tile move

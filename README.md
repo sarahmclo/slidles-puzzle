@@ -460,13 +460,14 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [Coolers Contrast Checker](https://coolors.co/) Ensure colour contrast inline with guidelines.
 * [Adobe Colors](https://color.adobe.com/) Generate pleasing colour palette in keeping with logo and overall design.
 
-### Code - Tutorials and adapted code sources
+### Code
 * [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) CSS Grid Layout explaining the grid structure thoroughly in HTML & CSS.
 * [NPMJS](https://www.npmjs.com/package/js-confetti) Confetti effect on win - adapted from tutorial to use canvas on win not on button.
 * [DEV](https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e) Add simple audio tutorial.
 * [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Cell) Grid styling and cells - use one image and create cells rather than importing multiple images.
-* [Stackoverflow](https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows) Adapt code shuffle tiles tiles. 
+* [Stackoverflow](https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows) Adapt code shuffle tiles tiles.
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) Using math random for tile diections, positions and moves.
+* [W3 Schools](https://www.w3schools.com/jsref/jsref_indexof_array.asp) Array Index tutorials.
 * [Stackoverflow](https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause) Audio toggle on/off for enhanced UX.
 * [Stackoverflow](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link) Play and pause audio using icon.
 * [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) Use modals instead of alert for info and win, optimises user navigation and experience.
