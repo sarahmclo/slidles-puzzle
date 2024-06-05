@@ -43,7 +43,6 @@ main {
 
 /* Main content */
 /* Timer, moves, audio & info */
-/* flex allows all to be on same line, add gap */
 .timer-moves-audio-info-container {
     display: flex;
     justify-content: space-between;
@@ -218,8 +217,7 @@ ol li {
 }
 
 .tile9 {
-    background: none;
-    background-color: #ffffff;
+    background: #ffffff;
     cursor: default;
     /* Blank tile 9 */
 }

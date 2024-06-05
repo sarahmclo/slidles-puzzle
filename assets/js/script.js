@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const solution = ["1", "2", "3", "4", "5", "6", "7", "8", ""];
 
     //Function to shuffle tiles
-    //Adapt code shuffle tiles array https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows
-    //i<100 allows the tiles shuffle sufficiently
+    //Adapt code shuffle tiles https://stackoverflow.com/questions/57907979/javascript-shuffle-table-rows
+    //i < 100 allows the tiles shuffle sufficiently
     function shuffle() {
         for (let i = 0; i < 100; i++) {
             const directions = ['up', 'down', 'left', 'right'];
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //Function to reset puzzle
     function resetGame() {
 
-        // Reset the tiles to their initial positions without numbers
+        // Reset the tiles to their initial positions without numbers being displayed
         tiles.forEach((tile, index) => {
             tile.textContent = index < 8 ? (index + 1).toString() : "";
             //tile.textContent = ""; // Remove the numbers from tiles
@@ -228,7 +228,7 @@ function switchImage() {
 document.getElementById("volume-icon").onclick = togglePlay;
 
 window.onload = function () {
-    let slideClickSound = document.getElementById("slide-click-osund");
+    let slideClickSound = document.getElementById("slide-click-sound");
     slideClickSound.muted = true;
     slideClickSound.currentTime = 0;
 };
