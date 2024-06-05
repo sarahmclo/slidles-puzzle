@@ -484,6 +484,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [Stackoverflow](https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause) Audio toggle on/off for enhanced UX.
 * [Stackoverflow](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link) Play and pause audio using icon.
 * [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) Use modals instead of alert for info and win, optimises user navigation and experience.
+* [Sentry](https://sentry.io/answers/how-to-style-a-checkbox-using-c) Style checkbox - simple tutorial on changing colour and height of checkbox.
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) Flexbox tutorials.
 
 ### Media
