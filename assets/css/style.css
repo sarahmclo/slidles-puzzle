@@ -154,11 +154,11 @@ main {
     line-height: 30px;
 }
 
-#audioModal #applyButton {
+#audioModal #resumeButton {
     margin-top: 10px;
 }
 
-#audioModal #applyButton:hover {
+#audioModal #resumeButton:hover {
     background-color: #A8CD6E;
 }
 
@@ -278,8 +278,8 @@ ol li {
 
 .playButton,
 .hintButton,
-.switchButton,
-#applyButton {
+.playAgainButton,
+#resumeButton {
     background-color: #252525;
     border: 0.5px solid #ffffff;
     border-radius: 20px;
@@ -301,8 +301,8 @@ ol li {
 }
 
 .playButton:hover,
-.hintButton:hover,
-.switchButton:hover {
+.playAgainButton:hover,
+.hintButton:hover {
     background-color: #F3A0BC;
     color: #ffffff;
     border: 0.5px solid #ffffff;
@@ -346,7 +346,7 @@ ol li {
 }
 
 #winModal .playButton,
-#applyButton {
+#resumeButton {
     background-color: #F3A0BC;
 }
 
