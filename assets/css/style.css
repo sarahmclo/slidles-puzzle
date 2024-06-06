@@ -158,7 +158,8 @@ main {
     margin-top: 10px;
 }
 
-#audioModal #resumeButton:hover {
+#audioModal #resumeButton:hover, 
+#winModal .playAgainButton:hover {
     background-color: #A8CD6E;
 }
 
@@ -301,7 +302,6 @@ ol li {
 }
 
 .playButton:hover,
-.playAgainButton:hover,
 .hintButton:hover {
     background-color: #F3A0BC;
     color: #ffffff;
@@ -345,7 +345,7 @@ ol li {
     padding-top: 10px;
 }
 
-#winModal .playButton,
+#winModal .playAgainButton,
 #resumeButton {
     background-color: #F3A0BC;
 }
