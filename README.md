@@ -201,7 +201,8 @@ By focusing on these structural elements, Slidles provides an engaging, enjoyabl
 5. **Surface**: Bright, vibrant design elements and pleasing interactive audio create an engaging experience.
 
 ## Features
-![slidles-features](docs/slidles-features.webp)
+![slidles-features](docs/features/slidles-features.webp)
+![slidles-features](docs/features/slidles-features1.webp)
 
 ### Header
 - **Logo**
