@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Confetti function adapted from tutorial https://www.npmjs.com/package/js-confetti
             const canvas = document.querySelector("#confetti");
-            const jsConfetti = new jsConfetti();
+            const jsConfetti = new JSConfetti();
             var winSound = document.getElementById("win-sound");
 
             function puzzleSolved() {
