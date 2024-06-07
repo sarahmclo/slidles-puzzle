@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Confetti function adapted from tutorial https://www.npmjs.com/package/js-confetti
             const canvas = document.querySelector("#confetti");
-            const jsConfetti = new JSConfetti();
+            const jsConfetti = new jsConfetti();
             var winSound = document.getElementById("win-sound");
 
             function puzzleSolved() {
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(timerInterval);
         seconds = 0;
         minutes = 0;
-        timerDisplay.textContent = '0:00';
+        timerDisplay.textContent = '00:00';
     }
 
     // Function to check if puzzle is solved and tiles back to correct position
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("volume-icon").onclick = togglePlay;
     };
 
-    /** Info modal */
+    /** Info Modal */
     // Modal - practiced in codepen and MDN, adapted from tutorial https://www.w3schools.com/howto/howto_css_modals.asp adjusted to use click on image (not button) to open modal
     // Get info modal
     let modal = document.getElementById("myModal");
@@ -283,7 +283,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let img = document.getElementById("info-modal");
     // Get element that closes modal
     let span = document.getElementsByClassName("close")[0];
-    console.log(close - modal);
     // When user clicks on icon, open modal
     img.onclick = function () {
         modal.style.display = "block";
@@ -293,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
     };
 
-    /** Hint modal */
+    /** Hint Modal */
     // Get hint button 
     let hintButton = document.querySelector(".hintButton");
     // Get hint modal element
@@ -314,5 +313,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target === hintModal) {
             hintModal.style.display = "none";
         }
+        // Win Modal
+        let winModal = document.getElementById("winModal");
+        let winCloseButton = winModal.getElementsByClassName("close")[0];
+        winCloseButton.onclick = function () {
+            winModal.style.display = "none";
+        };
     });
 });

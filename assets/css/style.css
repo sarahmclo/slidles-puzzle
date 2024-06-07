@@ -158,7 +158,7 @@ main {
     margin-top: 10px;
 }
 
-#audioModal #resumeButton:hover, 
+#audioModal #resumeButton:hover,
 #winModal .playAgainButton:hover {
     background-color: #A8CD6E;
 }
@@ -378,6 +378,40 @@ ol li {
     padding: 0px 20px 10px 20px;
 }
 
+/*======================
+    404 page
+=======================*/
+section {
+    align-items: center;
+    margin: 20px;
+}
+
+.error-image {
+    margin-top: 8rem;
+    max-width: 100%;
+}
+
+.errror-text {
+    display: block;
+    padding: 40px 40px;
+}
+
+.error-text h1 {
+    color: #252525;
+    font-size: 50px;
+    font-weight: 700;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.error-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    line-height: 2rem;
+    list-style-type: none;
+}
+
 /* Disable colour on a tag when visited (for testing) */
 a,
 a:visited,
@@ -441,5 +475,13 @@ a:active {
 
     #hintImage {
         top: 40%;
+    }
+
+    /*======================
+    404 page
+    =======================*/
+    .error-image {
+        margin-top: 8rem;
+        max-width: 500px;
     }
 }

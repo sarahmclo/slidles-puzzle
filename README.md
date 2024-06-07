@@ -235,22 +235,22 @@ A clear play button and hint Button allow for clear UX for navigating game.
 - **Info Modal**
 Info modal is discreet but obvious and contains relevant info on how to play the game.
 
-<img src="docs/features/modal.webp" alt="info-modal" width="500">
+<img src="docs/features/modal.webp" alt="info modal" width="500">
 
 - **Audio Modal**
 Introduced an audio modal, user can choose betwee, music, sfx, both or none, designed for UX best practices in mind.
 
-<img src="docs/features/audio-modal.webp" alt="audio-modal" width="500">
+<img src="docs/features/audio-modal.webp" alt="audio modal" width="500">
 
 - **Hint Modal**
 Hint modal gives the user an extra boost on how to solve the puzzle.
 
-<img src="docs/features/hint.webp" alt="hint-modal" width="500">
+<img src="docs/features/hint.webp" alt="hint modal" width="500">
 
 - **Win Modal**
 Win modal alerts the user to the puzzle being completed.
 
-<img src="docs/features/win-modal.webp" alt="info-modal" width="500">
+<img src="docs/features/win-modal.webp" alt="info modal" width="500">
 
 - **Theme**
 A description of the puzzle and sets the tone, with a view to changing the puzzle themes weekly.
@@ -266,6 +266,11 @@ Contains essential social media links for further engagement.
 
 - **Contact Information**
 Displaying important info on how to contact creator, with links.
+
+- **404 Error Page**
+The 404 page is an error webpage displayed when a server cannot find the requested URL, indicating that the webpage does not exist. I have simply desgned in keeping with main pages.
+
+<img src="docs/features/404-page.webp" alt="404 error page" width="500">
 
 ## Technologies Utilised <a name="technologies-utilised"></a>
 
@@ -443,6 +448,12 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 <summary>Tablet<a name="iPad"></a></summary>
 
 ![ipad-index](docs/tablet.webp)
+</details>
+
+<details>
+<summary>404 Error Page<a name="error-page"></a></summary>
+
+![404.html](docs/features/404-page.webp)
 </details>
 
 ## Future Features <a name="future-features"></a>
