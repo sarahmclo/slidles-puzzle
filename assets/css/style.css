@@ -387,8 +387,8 @@ section {
 }
 
 .error-image {
-    margin-top: 8rem;
-    max-width: 100%;
+    margin-top: 4rem;
+    max-width: 90%;
 }
 
 .errror-text {
@@ -398,7 +398,7 @@ section {
 
 .error-text h1 {
     color: #252525;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 700;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -407,9 +407,9 @@ section {
 .error-menu {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
     line-height: 2rem;
     list-style-type: none;
+    font-size: 18px;
 }
 
 /* Disable colour on a tag when visited (for testing) */
@@ -481,7 +481,7 @@ a:active {
     404 page
     =======================*/
     .error-image {
-        margin-top: 8rem;
-        max-width: 500px;
+        margin-top: 6rem;
+        max-width: 400px;
     }
 }
