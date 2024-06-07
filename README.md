@@ -2,7 +2,7 @@
 
 ![Mock-Up](docs/slidles-mockup.webp)
 
-Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, satisfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design, allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
+Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged with quick, satisfying challenges. Slidles combines the classic sliding tile puzzle with a fresh, minimalist design allowing for clean and easy navigation to solve our simple puzzles. Escape the complexity of modern life for a few minutes with our bright, eye-catching graphics and clean, intuitive interface. Slidles offers a refreshing experience for players of all ages. Each puzzle is engaging and rewarding, ensuring fun for both novice and seasoned puzzlers. Happy Sliding!
 
 [View Slidles Live Here](https://sarahmclo.github.io/slidles-puzzle/)
 
@@ -54,7 +54,7 @@ Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged wi
 12. [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)<a name="user-experience"></a>
-Our primary focus is on creating a seamless, enjoyable user experience. Slidles is designed with simplicity in mind, ensuring that users can navigate and play without any hassle. The vibrant design elements enhance engagement, making the puzzle-solving experience delightful and satisfying.
+Our primary focus is on creating a seamless, enjoyable user experience. Slidles is designed with simplicity in mind, ensuring that users can navigate and play with ease. The vibrant design elements and fun audio enhance engagement, making the puzzle-solving experience delightful and satisfying.
 
 ## Project Goals
 The main goals of the Slidles project are to:
@@ -107,7 +107,7 @@ For my sliding puzzle project, I've drawn inspiration from a blend of traditiona
 A bright and vibrant colour scheme is used to make the game visually stimulating. Colours are carefully chosen to create a balance between aesthetics and functionality.
 
 - **Colour Palette**
-The colour palette fir this site was devised in keeping with the original SLIDLES logo and created in [Adobe Color](https://color.adobe.com/).
+The colour palette for this site was devised in keeping with the original SLIDLES logo and created in [Adobe Color](https://color.adobe.com/).
 
 <img src="docs/colour-palette.webp" alt="colour palette">
 
@@ -122,7 +122,7 @@ Clear, easy-to-read fonts complement the vibrant design without distracting from
 - **Fonts**
 The font Montserrat was carefully chosen and imported from [Google Fonts](https://fonts.google.com/).
 Neue-Helvetica was used in keeping with design inspiration.
-Monospace was employed so the timer and moves section were not moving around page whilst incrementing
+Monospace was employed so the timer and moves section were not moving around page whilst incrementing.
 
 <img src="docs/fonts/fonts.webp" alt="fonts">
 
@@ -135,7 +135,7 @@ All images were orignially created, optimised and converted to webp with [Conver
 ### Wireframes
 Wireframes serve as the blueprint for the website, outlining the layout and functionality of each page. They help us visualise the user experience and iterate on design concepts and scope before implementation.
 
-Wireframes for this site were created with [Figma](https://figma.com/).
+Wireframes for this site were created by pen and with [Figma](https://figma.com/).
 
 - **Sketch Wireframes**
 
@@ -147,7 +147,7 @@ Wireframes for this site were created with [Figma](https://figma.com/).
 ![wireframes](docs/wireframes/slidles-wireframes.webp)
 
 ### Structure
-The structure of Slidles is designed for a seamless and intuitive user experience, with clear content hierarchy, consistent navigation and responsive design principle.
+The structure of Slidles is designed for a seamless and intuitive user experience, with clear content hierarchy, consistent navigation and responsive design principles.
 
 ### Content Hierarchy
 1. **Puzzle Area**: Central focus for gameplay.
@@ -162,15 +162,14 @@ The structure of Slidles is designed for a seamless and intuitive user experienc
 ### Page Structure
 - **Header**: Logo and main navigation.
 - **Main Content**: Central puzzle area.
-- **Sidebar (if applicable)**: Game options and settings.
-- **Footer**: Secondary navigation and contact details.
+- **Footer**: Social media links and contact details.
 
 ### Grid System/Flexbox
 - **Flexbox**: Ensures responsive, adaptive layout.
 - **Dynamic Resizing**: Elements adjust based on screen size.
 
 ### Consistency
-- **Design Elements**: Uniform colors, typography, and imagery.
+- **Design Elements**: Uniform colours, typography, and imagery.
 - **Interaction**: Predictable behavior for interactive elements.
 - **Layout**: Consistent across pages and devices.
 
@@ -183,24 +182,23 @@ The structure of Slidles is designed for a seamless and intuitive user experienc
 - **Touch-Friendly**: Effective touch inputs.
 
 ### Accessibility
-- **Keyboard Navigation**: Fully functional via keyboard.
 - **Screen Reader Support**: Descriptive alt text and ARIA labels.
 - **Color Contrast**: High contrast for visual impairments.
 
 ### User Flow
-1. **Landing Page**: Brief introduction to the game.
-2. **Game Start**: Immediate access to gameplay.
+1. **Landing Page**: Main puzzle page with info, audio and hint modals.
+2. **Game Start**: Immediate access to gameplay with timer and moves counter.
 3. **Gameplay**: Smooth interaction with visible progress.
-4. **Completion**: Clear feedback with options to start a new game or share.
+4. **Completion**: Clear feedback with options to start a new game with fun confetti and audio to ensure a sense of accomplishment on puzzle completion.
 
 By focusing on these structural elements, Slidles provides an engaging, enjoyable, and accessible experience for all users.
 
 ### The 5 Elements
 1. **Strategy**: Offering a classic puzzle game with a modern twist.
-2. **Scope**: Focusing on a single, well-designed puzzle game.
+2. **Scope**: Focus on a well-designed puzzle game.
 3. **Structure**: Clear navigation and intuitive gameplay.
 4. **Skeleton**: Wireframes ensure a user-friendly layout.
-5. **Surface**: Bright, vibrant design elements create an engaging experience.
+5. **Surface**: Bright, vibrant design elements and pleasing interactive audio create an engaging experience.
 
 ## Features
 ![slidles-features](docs/slidles-features.webp)
@@ -212,7 +210,7 @@ A simple, recognisable logo that reflects the game's playful and modern aestheti
 <img src="docs/slidles_logo.webp" alt="logo" width="500">
 
 - **Favicon**
-Original creation designed in Adobe Illustrator this custom favicon stems from the designed logo which enhances recognition and improves user experience by providing a visual marker for the puzzle.
+Original creation designed in Adobe Illustrator this custom favicon stems from the designed logo which enhances recognition and improves user experience by providing a visual marker for the puzzle site.
 
 <img src="docs/slidles_icon.webp" alt="favicon" width="100">
 
@@ -228,6 +226,7 @@ Subtle tile sound effects and calming music enhance the interactive experience w
 
 - **Puzzle**
 The core feature, designed to be engaging and rewarding, with varying levels of difficulty.
+<img src="docs/features/puzzles.webp" alt="info modal" width="500">
 
 - **Buttons**
 A clear play button and hint Button allow for clear UX for navigating game.
@@ -268,7 +267,7 @@ Contains essential social media links for further engagement.
 Displaying important info on how to contact creator, with links.
 
 - **404 Error Page**
-The 404 page is an error webpage displayed when a server cannot find the requested URL, indicating that the webpage does not exist. I have simply desgned in keeping with main pages.
+The 404 page is an error webpage displayed when a server cannot find the requested URL with simple customised design inkeeping with main site.
 
 <img src="docs/features/404-page.webp" alt="404 error page" width="500">
 
@@ -286,7 +285,7 @@ The 404 page is an error webpage displayed when a server cannot find the request
 - [**GitHub**](https://github.com/) GitHub utilised for hosting, viewing and some readme amendments.
 - [**Google Fonts**](https://fonts.google.com/) Google Fonts used to import Inter and Roboto into stylesheet.
 - [**Font Awesome**](https://fontawesome.com/) Font Awesome used throughout to add icons in order to create a better visual experience for the user.
-- [**Figma**](https://figma.com/) Balsamiq utilised to create wireframes during the design phase.
+- [**Figma**](https://figma.com/) Figma utilised to create wireframes during the design phase.
 - [**Responsive Design Checker**](https://responsivedesignchecker.com/) Responsive Design Checker used in the testing process to check responsiveness on various devices.
 - [**Am I Responsive**](https://ui.dev/amiresponsive) Am I Responsive utilised to generate Mock Up Image of site in a responsive manner.
 - [**Chrome DevTools**](https://developer.chrome.com/docs/devtools) Chrome DevTools utilised frequently during development process for code review and responsiveness tests.
@@ -336,8 +335,10 @@ To contribute or check the code, you can:
 
 ### Validation Testing
 ## HTML
+- ### Index Page ###
 ![markup-validation-index](docs/bugs/html-markup-validation.webp)
 
+- ### 404 Error Page ###
 ![markup-validation-404](docs/bugs/404-markup-validation.webp)
 
 ## CSS
@@ -459,9 +460,9 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 </details>
 
 ## Future Features <a name="future-features"></a>
-- New puzzle levels and challenges.
-- Additional themes and color schemes.
-- Social sharing features to engage with friends.
+- New puzzles, with levels and increasing challenges.
+- Additional themes and colour schemes.
+- Social sharing features to engage with friends and further reach of Slidles.
 
 ## Credits <a name="credits"></a>
 
