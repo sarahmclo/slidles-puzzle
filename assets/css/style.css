@@ -130,6 +130,10 @@ main {
     cursor: pointer;
 }
 
+hr {
+    margin: 0px 30px 0px 30px;
+ }
+
 /* Audio modal */
 #audioModal {
     position: fixed;

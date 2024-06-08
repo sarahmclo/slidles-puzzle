@@ -29,8 +29,6 @@ Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged wi
     - [Structure](#structure)
     - [The 5 Elements](#the-5-elements)
 3. [Features](#features)
-    - [Logo](#logo)
-    - [Favicon](#favicon)
     - [Header](#header)
     - [Main Content](#main-content)
     - [Footer](#footer)
@@ -135,7 +133,7 @@ All images were orignially created, optimised and converted to webp with [Conver
 ### Wireframes
 Wireframes serve as the blueprint for the website, outlining the layout and functionality of each page. They help us visualise the user experience and iterate on design concepts and scope before implementation.
 
-Wireframes for this site were created by pen and with [Figma](https://figma.com/).
+Wireframes for this site were created by pen and with [Figma](https://figma.com/) and include future feature options to solve new puzzles.
 
 - **Sketch Wireframes**
 
