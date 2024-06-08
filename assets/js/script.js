@@ -1,8 +1,8 @@
 // Wait for DOM to finish loading before running puzzle
 document.addEventListener("DOMContentLoaded", function () {
     // Get elements
-    const playButton = document.querySelector(".playButton");
-    const tiles = document.querySelectorAll(".tile");
+    const playButton = document.querySelector('.playButton');
+    const tiles = document.querySelectorAll('.tile');
     const timerDisplay = document.getElementById('timer');
     const movesDisplay = document.getElementById('moves');
     const audio = document.getElementById('slide-click-sound');
@@ -83,15 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
             clickSound.play(); //Play sound effect on click
 
             // Confetti function adapted from tutorial https://www.npmjs.com/package/js-confetti
-            const canvas = document.querySelector("#confetti");
-            const jsConfetti = new JSConfetti();
+            const JSConfetti = new JSConfetti();
             var winSound = document.getElementById("win-sound");
-
-            function puzzleSolved() {
-                jsConfetti.addConfetti();
-                winSound.currentTime = 0;
-                winSound.play();
-            }
 
             // Check if the puzzle is solved after each tile move
             if (isSolved()) {
@@ -104,6 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 puzzleSolved();
             }
+        }
+        function puzzleSolved() {
+            JSConfetti.addConfetti();
+            winSound.currentTime = 0;
+            winSound.play();
         }
     }
 
@@ -213,13 +211,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     });
 
-    // Switch puzzles - future feature - new puzzles
-    const images = [
-        "url('assets/images/pink-slidle.webp')",
-        "url('assets/images/black-slidle.webp')",
-        "url('assets/images/yellow-slidle.webp')",
-        "url('assets/images/white-slidle.webp')"
-    ];
+    // Switch puzzles - future feature - new puzzles - add in at later date
+    // const images = [
+    //  "url('assets/images/pink-slidle.webp')",
+    //  "url('assets/images/black-slidle.webp')",
+    //  "url('assets/images/yellow-slidle.webp')",
+    //  "url('assets/images/white-slidle.webp')"
+    // ];
 
     /** Audio */
     // Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
@@ -258,7 +256,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.onload = function () {
-        let modal = document.getElementById("musicModal");
         let applyBtn = document.getElementById("resumeButton");
 
         document.getElementById("volume-icon").onclick = togglePlay;

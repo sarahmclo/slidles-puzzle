@@ -404,7 +404,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 |-------------|-----------------------|---------|--------|:-----:|----------|
 | Moves & timer move around whilst incrementing| css/js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use monospace font |
 
-- ### Javascript Validation Testing Bugs ###
+- ### Javascript Testing Bugs ###
 |Bug / Errors | Where / Location site | Browser | Device | Fixed | Solution |
 |-------------|-----------------------|---------|--------|:-----:|----------|
 | audio on-click| js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Use on-click toggle |
@@ -430,6 +430,7 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Fix time display in modal to match game, so time displays as 00:00 | js.script | Chrome, Safari, Firefox  | Desktop, Laptop, Tablet, Mobile | Yes | Copy timer display: add toString().padStart |
 | Uncaught ReferenceError: Cannot access 'jsConfetti' before initialization at puzzleSolved | js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Move confetti variable to before the puzzleSolved funcation call  |
 | Tile slide sound effect is playing even though volume-icon is off | js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Spelling mistake is click sound function. Fixed spelling mistake! |
+| (https://github.com/goldfire/howler.js?tab=readme-ov-file#documentation) Ensure audio plays without delay on mobile, tablet and across all browsers. | html/js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Use Howler.js https://github.com/goldfire/howler.js?tab=readme-ov-file#documentation |
 
 ## Finished Product <a name="finished-product"></a>
 Our Slidles puzzle combines the classic challenge of traditional sliding puzzles with the modern simplicity of Pantone colour swatches and the artistic touch of Picasso line drawings. The engaging gameplay, inspired by New York Times games, offers a visually striking and mentally stimulating experience. Perfect for both casual gamers and puzzle enthusiasts, Slidles is a beautiful blend of art and play.
@@ -504,6 +505,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 * [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) Use modals instead of alert for info and win, optimises user navigation and experience.
 * [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) Add timeout to puzzle if not played for a certain amount of time.
 * [Sentry](https://sentry.io/answers/how-to-style-a-checkbox-using-c) Style checkbox - simple tutorial on changing colour and height of checkbox.
+* [Howler.js](https://github.com/goldfire/howler.js?tab=readme-ov-file#documentation) Ensure audio plays without delay on mobile, tablet and across all browsers.
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) Flexbox tutorials.
 
 ### Media
