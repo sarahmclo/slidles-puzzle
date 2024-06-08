@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const timerDisplay = document.getElementById('timer');
     const movesDisplay = document.getElementById('moves');
     const audio = document.getElementById('slide-click-sound');
+    const sound = new HTMLUnknownElement({
+        src: ['assets/audio/slide-click.mp3']
+    })
 
     //  Puzzle Variables - blank tile position
     let moves = 0; // Start counter at 0

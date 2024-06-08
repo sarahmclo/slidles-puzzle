@@ -524,9 +524,9 @@ Slidles merges the timeless appeal of sliding puzzles with contemporary design e
 ## Acknowledgements <a name="acknowledgements"></a>
 - Rahul Lakahanpal, my mentor.
 - Amy Richardson, my course facillitator.
-- CI Tutor Support and Student Care.
-- Slack community for resources and daily motivation.
 - Fellow course students for sharing.
+- Ed B_alum in CI Slack for sharing valued info to help fix my audio bugs!
+- Our Slack community for resources and daily motivation.
 - My own childhood tile-sliding puzzle.
 - Ozzy the dog.
 
