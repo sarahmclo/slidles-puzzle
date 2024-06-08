@@ -83,8 +83,14 @@ document.addEventListener("DOMContentLoaded", function () {
             clickSound.play(); //Play sound effect on click
 
             // Confetti function adapted from tutorial https://www.npmjs.com/package/js-confetti
-            const JSConfetti = new JSConfetti();
+            const jsConfetti = new JSConfetti();
             var winSound = document.getElementById("win-sound");
+
+            function puzzleSolved() {
+                jsConfetti.addConfetti();
+                winSound.currentTime = 0;
+                winSound.play();
+            }
 
             // Check if the puzzle is solved after each tile move
             if (isSolved()) {
@@ -97,11 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 puzzleSolved();
             }
-        }
-        function puzzleSolved() {
-            JSConfetti.addConfetti();
-            winSound.currentTime = 0;
-            winSound.play();
         }
     }
 
