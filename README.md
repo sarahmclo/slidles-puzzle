@@ -61,9 +61,12 @@ The main goals of the Slidles project are to:
 - Ensure a smooth, intuitive user experience across all devices.
 
 ## User Stories
-- As a user, I want to easily understand how to play the game without needing extensive instructions.
-- As a user, I want the game to be challenging yet solvable, providing a sense of accomplishment.
-- As a user, I want the design to be visually appealing and not overwhelming.
+- As a user, I want to easily grasp how to play the game intuitively.
+- As a user, I want a quick mental challenge that is not overwhelming.
+- As a user, I want the design to be visually appealing.
+- As a user, I want to find a fun game to return to and share with like-minded people.
+- As a user, I want the puzzle to be challenging yet solvable, providing a sense of accomplishment.
+- As a user, I want a quick and fruitful escape in my everyday!
 
 ## Target Audience Goals
 - Enjoy a quick, engaging mental challenge during short breaks.
