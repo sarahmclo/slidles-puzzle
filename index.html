@@ -171,17 +171,21 @@
         <!-- Created by & contact -->
         <p class="created-by">Created by
             <a href="https://github.com/sarahmclo/" target="blank" rel="noopener"
-                aria-label="Visit creator's github page (opens in new tab)"> sarahmclo </a> 2024 /
+                aria-label="Visit creator's github page (opens in new tab)"> sarahmclo</a> 2024 /
             slidlespuzzle@gmail.com
         </p>
     </footer>
 
-    <!-- JS --<!-- Confetti canon -->
+    <!-- JS -->
+    <!-- Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- Audio fix sfx delay on mobile -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.core.min.js">const sound = new HTMLUnknownElement({ src: ['assets/audio/slide-click.mp3', 'assets/audio/615099__mlaudio__magic_game_win_success.wav']})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.core.min.js"></script>
+    <script>const sound = new Howl({ 
+        src: ['assets/audio/slide-click.mp3', 'assets/audio/615099__mlaudio__magic_game_win_success.wav']
+    });</script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b0f8ceb29c.js" crossorigin="anonymous"></script>
