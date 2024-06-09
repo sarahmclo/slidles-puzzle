@@ -115,6 +115,10 @@ main {
     width: 80%;
 }
 
+.modal-content img {
+    max-width: 100%;
+}
+
 /* Info modal close button */
 .close {
     float: right;
