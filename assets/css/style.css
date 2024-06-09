@@ -454,8 +454,8 @@ a:active {
     }
 }
 
-/* Media query: Large screens (992px and up) */
-@media screen and (min-width: 992px) {
+/* Media query: Large screens (1200px and up) */
+@media screen and (min-width: 1200px) {
     body {
         min-height: 100vh;
         margin: 0%;

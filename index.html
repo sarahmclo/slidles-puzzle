@@ -184,9 +184,9 @@
     <!-- Audio fix sfx delay on mobile -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.core.min.js"></script>
     <script>const SlideClicksound = new Howl({ 
-        src: ['assets/audio/slide-click.mp3', 'assets/audio/615099__mlaudio__magic_game_win_success.wav'], preload: true,
+        src: ['assets/audio/slide-click.mp3', 'assets/audio/615099__mlaudio__magic_game_win_success.wav'], preload: true, autoplay: true,
         html5: true
-    });</script>
+    }); sound.play(); </script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b0f8ceb29c.js" crossorigin="anonymous"></script>
