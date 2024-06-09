@@ -87,11 +87,14 @@ document.addEventListener("DOMContentLoaded", function () {
             var winSound = document.getElementById("win-sound");
 
             function puzzleSolved() {
-                jsConfetti.addConfetti();
+                jsConfetti.addConfetti({
+                    confettiColors: [
+                      '#F3A0BC', '#A8CD6E', '#F2DD4E', '#87AAD0', '#FCBE4F', '#FF69B4', '#FFFFFF',
+                    ],
+                  });
                 winSound.currentTime = 0;
                 winSound.play();
             }
-
             // Check if the puzzle is solved after each tile move
             if (isSolved()) {
                 // Stop timer
@@ -197,7 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
         resetGame();
         shuffle();
         gameStarted = true;
-
         //Close win modal
         document.getElementById("winModal").style.display = "none";
         // Start timer when game begins
@@ -211,14 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
             timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         }, 1000);
     });
-
-    // Switch puzzles - future feature - new puzzles - add in at later date
-    // const images = [
-    //  "url('assets/images/pink-slidle.webp')",
-    //  "url('assets/images/black-slidle.webp')",
-    //  "url('assets/images/yellow-slidle.webp')",
-    //  "url('assets/images/white-slidle.webp')"
-    // ];
 
     /** Audio */
     // Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
