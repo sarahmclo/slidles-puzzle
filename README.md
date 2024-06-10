@@ -45,7 +45,7 @@ Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged wi
 8. [Finished Product](#finished-product)
 9. [Future Features](#future-features)
 10. [Credits](#credits)
-    - [Content](#content)
+    - [Main Content](#main-content)
     - [Code](#code)
     - [Media](#media)
 11. [Conclusion](#conclusion)
@@ -365,7 +365,13 @@ To contribute or check the code, you can:
 ## Accessibility
 
 ### Lighthouse Testing
-![lighthouse-testing](docs/bugs/slidles-lighthouse-test.webp)
+- **Desktop**
+
+![lighthouse-testing](docs/bugs/slidles-lighthouse-test-desktop.webp)
+
+- **Mobile**
+
+![lighthouse-testing](docs/bugs/slidles-lighthouse-test-mobile.webp)
 
 ### Semantic HTML
 
@@ -487,7 +493,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 
 ## Credits <a name="credits"></a>
 
-### Content
+### Main Content
 
 * Puzzle, text and imagery all original creations.
 * [Code-Institute](https://codeinstitute.net/ie/?nab=0) Walkthrough projects content.
