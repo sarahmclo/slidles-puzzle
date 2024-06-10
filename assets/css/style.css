@@ -138,6 +138,10 @@ hr {
     margin: 0px 20px 0px 20px;
  }
 
+ #puzzles{
+    padding: 10px;
+ }
+
 /* Audio modal */
 #audioModal {
     position: fixed;
