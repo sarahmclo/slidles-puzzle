@@ -213,8 +213,26 @@ document.addEventListener("DOMContentLoaded", function () {
             timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         }, 1000);
     });
-
+    
     /** Audio */
+    // Sfx
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select the button element or any other element to trigger the audio playback
+        const playButton = document.getElementById('play-button');
+
+        // Define the Howl instance
+        const SlideClicksound = new Howl({ 
+            src: ['assets/audio/slide-click.mp3', 'assets/audio/615099__mlaudio__magic_game_win_success.wav'], 
+            preload: true
+        });
+
+        // Add click event listener to the button
+        playButton.addEventListener('click', function() {
+            // Start playing the audio after the user clicks the button
+            SlideClicksound.play();
+        });
+    });
+
     // Toggle on/off - adapted in codepen from tutorial https://stackoverflow.com/questions/55018585/how-to-turn-on-audio-on-click-icon-play-pause
     // Assign togglePlay function to onclick events of vol-icon a (adapted from: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
     function togglePlay() {
