@@ -218,71 +218,71 @@ An original creation designed in Adobe Illustrator, this custom favicon stems fr
 
 ### Main Content
 - **Timer**
-
 Tracks the time taken to solve each puzzle, adding an element of challenge.
 
-- **Moves**
+<img src="docs/features/timer.webp" alt="timer counter" width="500">
 
+- **Moves**
 Counts the number of moves made, encouraging strategic thinking.
 
-- **Audio**
-
-Subtle tile sound effects and calming music enhance the interactive experience without being distracting and using off/on toggle for optimal UX. Fun win sound when puzzle is solved for optimum sense of accomplishment.
-
-- **Puzzle**
-
-The core feature, designed to be engaging and rewarding.
-<img src="docs/features/puzzles.webp" alt="info modal" width="500">
-
-- **Buttons**
-
-A clear play button and hint Button allow for clear UX in navigating game.
+<img src="docs/features/moves.webp" alt="moves counter" width="500">
 
 - **Info Modal**
-Info modal is discreet but obvious and contains relevant info on how to play.
+A discreet but obvious modal that contains relevant info on how to play.
 
 <img src="docs/features/modal.webp" alt="info modal" width="500">
 
-- **Audio Modal**
+- **Audio**
+Subtle tile sound effects and calming music enhance the interactive experience without being distracting and using off/on toggle for optimal UX. Fun win sound when puzzle is solved for optimum sense of accomplishment.
 
-Audio modal introduced so user can choose between, music, sfx, both or none, designed for best UX practices in mind. Checkboxes styled in keeping with site.
+<img src="docs/features/audio.webp" alt="audio icon" width="500">
+
+- **Audio Modal**
+Introduced options so user can choose between, music, sfx, both or none, designed for best UX practices in mind. Checkboxes styled in keeping with site.
 
 <img src="docs/features/audio-modal.webp" alt="audio modal" width="500">
 
-- **Hint Modal**
+- **Puzzle**
+The core feature, designed to be engaging and rewarding.
 
-Hint modal gives the user an extra boost on how to solve the puzzle.
+<img src="docs/features/puzzles.webp" alt="info modal" width="500">
+
+- **Buttons**
+A clear play button and hint button allow for clear UX in navigating game.
+
+<img src="docs/features/buttons.webp" alt="buttons" width="500">
+
+- **Hint Modal**
+Displayed to the user for an extra boost on how to solve the puzzle, closes when anywhere onscreen is clicked for simple navigation.
 
 <img src="docs/features/hint.webp" alt="hint modal" width="500">
 
 - **Win Modal**
-
-Win modal alerts the user to the puzzle being completed.
+Alerts the user to the puzzle being completed.
 
 <img src="docs/features/win-modal.webp" alt="info modal" width="500">
 
 - **Theme**
-
 A description of the puzzle and sets the tone, with a view to updating the puzzle themes regularly.
 
-- **Confetti**
+<img src="docs/features/theme.webp" alt="theme description" width="500">
 
+- **Confetti**
 Added a burst of confetti on solving the puzzle to optimise user experience and give sense of accomplishment.
 
 <img src="docs/features/confetti.webp" alt="confetti" width="500">
 
 ### Footer
 - **Social Networks**
-
 Contains essential social media links for further engagement.
 
 - **Contact Information**
+Displays important info on how to contact creator, with links.
 
-Displaying important info on how to contact creator, with links.
+<img src="docs/features/footer.webp" alt="social and contact info" width="500">
 
 ### 404 Error Page
-
-The 404 page is an error webpage displayed when a server cannot find the requested URL with simple customised design inkeeping with main site.
+An error webpage displays when a server cannot find the requested URL with simple customised design inkeeping with main site.
 
 <img src="docs/features/404-page.webp" alt="404 error page" width="500">
 
