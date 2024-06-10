@@ -100,7 +100,7 @@ Our design philosophy centres on simplicity, vibrancy and user engagement. We be
 - **Interactive Elements**: Engages users through dynamic feedback.
 
 - **References**
-For my sliding puzzle project, I've drawn inspiration from a blend of traditional sliding puzzles, the minimalist elegance of Pantone colour swatches with the clean lines and abstract forms of Picasso's line drawings contribute to the aesthetic. The puzzle itself is like a polaroid snapshot, while the engaging interactivity of New York Times games inspire and shape the user experience. This fusion of artistic and functional elements create a unique and visually appealing puzzle game.
+For my sliding puzzle project, I've drawn inspiration from a blend of traditional sliding puzzles, the minimalist elegance of Pantone colour swatches with the clean lines and abstract forms of Picasso's line drawings to contribute to the overall aesthetic. The puzzle itself is like a polaroid snapshot, while the engaging interactivity of New York Times games inspire and shape the user experience. This fusion of artistic and functional elements create a unique and visually appealing puzzle game.
 
 ![ref-pic](docs/references.webp)
 
@@ -120,7 +120,6 @@ The Slidles logo is an original creation using Adobe Illustrator and a starting 
 - ### Typography
 Clear, easy-to-read fonts complement the vibrant design without distracting from gameplay.
 
-- **Fonts**
 The font Montserrat was carefully chosen and imported from [Google Fonts](https://fonts.google.com/).
 Neue-Helvetica was used in the logo in keeping with design inspiration.
 Monospace courier was employed so the timer and moves section do not move around page whilst incrementing.
@@ -151,14 +150,14 @@ Wireframes for this site were created by pen and with [Figma](https://figma.com/
 The structure of Slidles is designed for a seamless and intuitive user experience, with clear content hierarchy, consistent navigation and responsive design principles.
 
 ### Content Hierarchy
-1. **Puzzle Area**: Central focus for gameplay.
-2. **Timer and Moves Counter**: Visible to track progress.
-3. **Navigation**: Easy access to puzzles, instructions, and settings.
-4. **Footer**: Essential links and information.
+- **Puzzle Area**: Central focus for gameplay.
+- **Timer and Moves Counter**: Visible to track progress.
+- **Navigation**: Easy access to puzzles, instructions, and settings.
+- **Footer**: Essential links and information.
 
 ### Navigation
 - **Main Content**: Linked button to start puzzle, modals for instructions and audio.
-- **Footer Links**: Additional resources, soucial media links and contact info.
+- **Footer Links**: Additional resources, souial media links and contact info.
 
 ### Page Structure
 - **Header**: Logo and tagline.
@@ -298,7 +297,7 @@ An error webpage displays when a server cannot find the requested URL with simpl
 
 - [**Gitpod**](https://www.gitpod.io/) Gitpod used for writing code, committing, and pushing to GitHub. 
 - [**GitHub**](https://github.com/) GitHub utilised for hosting, viewing and some readme amendments.
-- [**Google Fonts**](https://fonts.google.com/) Google Fonts used to import Inter and Roboto into stylesheet.
+- [**Google Fonts**](https://fonts.google.com/) Google Fonts used to import chosen fonts into stylesheet.
 - [**Font Awesome**](https://fontawesome.com/) Font Awesome used throughout to add icons in order to create a better visual experience for the user.
 - [**Figma**](https://figma.com/) Figma utilised to create wireframes during the design phase.
 - [**Responsive Design Checker**](https://responsivedesignchecker.com/) Responsive Design Checker used in the testing process to check responsiveness on various devices.
@@ -306,7 +305,7 @@ An error webpage displays when a server cannot find the requested URL with simpl
 - [**Chrome DevTools**](https://developer.chrome.com/docs/devtools) Chrome DevTools utilised frequently during development process for code review and responsiveness tests.
 - [**Browserstack**](https://www.browserstack.com/) Browserstack employed to test browser compatility across multiple devices.
 - [**Shields.io**](https://shields.io/) Shields.io used to generate dynamic badges for Readme.
-- [**Coolers Contrast Checker**](https://coolors.co/) Coolers Contrast Checker used to make sure colours contrasted well correctly for optimum accessibility.
+- [**Coolers Contrast Checker**](https://coolors.co/) Coolers Contrast Checker used to make sure colours contrasted well correctly for optimal accessibility.
 - [**Adobe Colors**](https://color.adobe.com/) Adobe Colors helped to generate a pleasing colour palette in keeping with logo and overall design.
 - [**Convertio**](https://convertio.co/) Convertio utilised to optimise images to webp for fast loading.
 
