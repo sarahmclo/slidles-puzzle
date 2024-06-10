@@ -45,7 +45,7 @@ Welcome to Slidles, a vibrant puzzle game designed to keep your brain engaged wi
 8. [Finished Product](#finished-product)
 9. [Future Features](#future-features)
 10. [Credits](#credits)
-    - [Main Content](#main-content)
+    - [Content](#content)
     - [Code](#code)
     - [Media](#media)
 11. [Conclusion](#conclusion)
@@ -284,7 +284,7 @@ Displays important info on how to contact creator, with links.
 ### 404 Error Page
 An error webpage displays when a server cannot find the requested URL with simple customised design inkeeping with main site.
 
-<img src="docs/features/404-page.webp" alt="404 error page" width="500">
+<img src="docs/features/404-page.webp" alt="404 error page" width="700">
 
 ## Technologies Utilised <a name="technologies-utilised"></a>
 
@@ -493,7 +493,7 @@ Our Slidles puzzle combines the classic challenge of traditional sliding puzzles
 
 ## Credits <a name="credits"></a>
 
-### Main Content
+### Content
 
 * Puzzle, text and imagery all original creations.
 * [Code-Institute](https://codeinstitute.net/ie/?nab=0) Walkthrough projects content.
