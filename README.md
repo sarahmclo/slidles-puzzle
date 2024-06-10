@@ -449,8 +449,8 @@ Throughout the development process, we encountered and resolved various bugs to 
 | Ensure audio plays without delay on mobile, tablet and across all browsers. | html/js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Use Howler.js https://github.com/goldfire/howler.js?tab=readme-ov-file#documentation and employ a cdn in the script |
 | "AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page." | js.script | Chrome, Safari, Firefox | Desktop, Laptop, Tablet, Mobile | Yes | Move script to js.html and add event listener |
 
-- ### Puzzle Grid Codepen Practice ###
-[Codepen](https://codepen.io/) Practice and troubleshoot code ideas/bugs.
+- ### Puzzle Grid Practice ###
+[Codepen](https://codepen.io/) Codepen utilised to practice and troubleshoot grid code ideas and bugs.
 ![grid-codepen-practice](docs/codepen-grid-practice.webp)
 
 ## Finished Product <a name="finished-product"></a>
